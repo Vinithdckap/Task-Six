@@ -48,6 +48,7 @@
 
 @opeSans: 'Open Sans';
 @pt: 'PT Serif';
+@oswald: 'Oswald', sans-serif;
 
 
 @primary-color: #707070;
@@ -58,9 +59,20 @@
 
 
 body {
+
+    background-color: #FAFAFA;
+
+    button,
+    .material-symbols-outlined {
+        cursor: pointer;
+    }
+
+
     .main-section {
         .main-container {
             .inner-container {
+
+                // header section styles
                 .header-section {
                     .header-container {
                         .header-img {
@@ -69,6 +81,8 @@ body {
                         }
                     }
 
+
+                    // banner
                     .banner-container {
                         background-image: url(/Images/Banner.png);
                         background-repeat: no-repeat;
@@ -105,6 +119,465 @@ body {
                         }
                     }
                 }
+
+
+                .site-description-section {
+                    h4 {
+                        font: 600 14px/20px @opeSans;
+                        color: @primary-color;
+                        padding: 25px 193px;
+
+                        a {
+                            color: black;
+                        }
+                    }
+
+                }
+
+
+                // filter and listing page section styles
+
+                .filter-listing-section {
+                    display: flex;
+                    // padding-bottom: 60px;
+
+
+                    // filter sections styles
+                    .filter-section {
+                        max-width: 300px;
+                        background-color: #ECECEC;
+                        width: 100%;
+                        margin-left: 133px;
+                        height: 100%;
+
+
+                        .filter-container {
+                            padding: 15px 20px;
+
+
+                            .outerBox {
+                                .pricing-div {
+                                    display: flex;
+                                    justify-content: space-between;
+
+                                    .startingPrice {
+                                        p {
+                                            font: 600 16px/22px @opeSans;
+                                            color: @secondary-color;
+                                        }
+                                    }
+                                }
+
+                                form {
+                                    input {
+                                        width: 100%;
+                                        margin-top: 12px;
+                                    }
+                                }
+                            }
+
+
+                            // contents
+
+                            .filter-contents {
+                                .inner-filter-contents {
+                                    padding: 36px 0px 8px 0px;
+
+                                    .filterBy {
+                                        font: bold 16px/22px @opeSans;
+
+                                    }
+                                }
+
+
+                                // options
+
+                                .filter-category {
+                                    background-color: @secondary-color;
+                                    border-bottom: 1px solid #FFFFFF;
+                                    cursor: pointer;
+
+                                    .filter-option {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        padding: 9px 16px;
+
+                                        .type-filter {
+                                            h4 {
+                                                font: bold 16px/34px @opeSans;
+                                                color: white;
+                                                text-transform: uppercase;
+                                            }
+                                        }
+
+                                        .dropDown-div {
+                                            .expand {
+                                                font-size: 28px;
+                                                color: white;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+
+                            .filter-contents> :nth-child(2) {
+                                border-radius: 8px 8px 0px 0px;
+                            }
+
+                            .filter-contents>:last-child {
+                                border-radius: 0px 0px 8px 8px;
+
+                            }
+                        }
+                    }
+
+                    // listing page details styles
+
+                    .listingPage-section {
+                        margin: 15px 133px 0px 40px;
+                        width: 100%;
+
+                        .listing-container {
+                            .header-listing {
+
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                .search-container {
+                                    display: flex;
+                                    align-items: center;
+                                    width: 100%;
+                                    max-width: 60%;
+                                    justify-content: flex-start;
+
+                                    label {
+                                        font: bold 12px/17px @opeSans;
+                                        color: @secondary-color;
+                                    }
+
+                                    select {
+                                        width: 100%;
+                                        max-width: 135px;
+                                        padding: 8px 0px 8px 15px;
+                                        font: italic 10px/25px @opeSans;
+                                        color: @secondary-color;
+                                        border-radius: 25px;
+                                        border-color: 1px solid #95989A;
+                                        margin: 0px 10px;
+                                    }
+
+                                    img {
+                                        width: 100%;
+                                        max-width: 16px;
+                                        height: auto;
+                                    }
+                                }
+
+                                .listGrid-buttons {
+                                    display: flex;
+                                    align-items: center;
+                                    column-gap: 20px;
+
+                                    .list {
+                                        span {
+                                            color: #740000;
+                                        }
+                                    }
+
+
+                                }
+
+                                .showLists {
+
+                                    display: flex;
+                                    align-items: center;
+
+
+                                    label {
+                                        font: bold 12px/17px @opeSans;
+                                        color: @secondary-color;
+                                        margin-right: 7px;
+                                    }
+
+                                    select {
+                                        width: 100%;
+                                        max-width: 70px;
+                                        padding: 5px;
+                                        font: italic 10px/25px @opeSans;
+                                        color: @secondary-color;
+                                        border-radius: 25px;
+                                        border-color: 1px solid #95989A;
+
+                                    }
+                                }
+
+                            }
+
+                            hr {
+                                margin: 12px 0px 20px;
+                                color: black;
+                            }
+
+                            .product-section {
+
+                                padding-bottom: 20px;
+                                position: relative;
+
+                                .new {
+
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                }
+
+                                .productInfo-container {
+                                    width: 100%;
+                                    max-width: 760px;
+                                    background-color: #FFFFFF;
+                                    box-shadow: 0 3px 10px transparent;
+                                    height: 180px;
+                                    padding: 15px 0px 15px 15px;
+
+
+                                    .product-flex {
+                                        display: flex;
+
+                                        .productImg {
+                                            width: 100%;
+                                            max-width: 100px;
+                                        }
+
+                                        .productDetails {
+                                            width: 100%;
+                                            padding: 0px 20px 0px 30px;
+
+                                            .top-content {
+
+                                                // max-width: 484px;
+
+                                                .inner-contents {
+                                                    display: flex;
+                                                    justify-content: space-between;
+
+                                                    h3 {
+                                                        font: 600 16px/20px @opeSans;
+                                                    }
+
+                                                    .heart {
+                                                        color: #740000;
+                                                    }
+
+                                                }
+
+                                                p {
+                                                    font: 600 12px/16px @opeSans;
+                                                    color: @primary-color;
+                                                    padding-top: 10px;
+                                                    max-width: 484px;
+
+                                                    & a {
+                                                        color: black;
+                                                    }
+                                                }
+
+
+                                            }
+
+                                            .pricingDetails {
+
+                                                display: flex;
+                                                justify-content: space-between;
+                                                align-items: center;
+                                                padding-top: 45px;
+
+                                                .quantity {
+                                                    width: 50%;
+
+                                                    .wineQnty {
+                                                        display: flex;
+                                                        width: 100%;
+                                                        max-width: 60px;
+                                                        border: 1px solid #707070;
+
+                                                        .totalQnty {
+                                                            font: 400 12px/16px @oswald;
+                                                            background-color: #707070;
+                                                            width: 100%;
+                                                            max-width: 30px;
+                                                            height: 24px;
+                                                            text-align: center;
+                                                            color: white;
+                                                            padding: 5px;
+                                                        }
+
+                                                        .qnty {
+                                                            font: 400 12px/16px @oswald;
+                                                            width: 100%;
+                                                            max-width: 30px;
+                                                            height: 24px;
+                                                            text-align: center;
+                                                            color: #707070;
+                                                            padding: 5px;
+                                                        }
+                                                    }
+                                                }
+
+
+
+
+                                                .rate {
+                                                    display: flex;
+                                                    align-items: center;
+
+                                                    p {
+
+                                                        font: 600 12px/16px @opeSans;
+                                                        color: @primary-color;
+
+                                                    }
+
+                                                    span {
+                                                        font: bold 20px/16px @pt;
+                                                        color: @price-color;
+                                                        padding-left: 6px;
+
+                                                    }
+
+
+                                                    .viewBtn {
+                                                        margin-left: 15px;
+
+                                                        button {
+                                                            width: 100%;
+                                                            max-width: 100px;
+                                                            color: white;
+                                                            font: bold 10px/13px @pt ;
+                                                            background-color: #0088CC;
+                                                            border-radius: 31px;
+                                                            padding: 5px 12px;
+                                                            border: none;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+
+                                        }
+
+
+                                    }
+
+
+
+
+
+                                }
+                            }
+
+                            .last {
+                                border-bottom: 1px solid black;
+                            }
+
+
+                        }
+
+                        .pagination {
+                            padding: 30px 0px 60px 0px;
+                            text-align: center;
+
+                            a {
+                                text-decoration: none;
+                                color: black;
+                                padding-left: 4px;
+                                font: 400 12px/17px @opeSans;
+                                border-radius: 20px;
+
+                            }
+
+                            .page-start {
+                                background-color: black;
+                                color: white;
+                                height: 20px;
+                                width: 20px;
+
+                            }
+
+                        }
+                    }
+
+
+
+                }
+
+
+                // contact container styles
+
+                .contact-banner {
+
+                    .contact-details {
+                        background-color: #ECECEC;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 15px 0px;
+
+
+                        .help {
+                            .contact-icon {
+                                width: 100%;
+                                max-width: 60px;
+                            }
+                        }
+
+                        .helpText {
+                            padding: 0px 15px;
+                            h2 {
+                                font: bold 20px/37px @pt;
+                                color: @price-color;
+
+                            }
+
+                            p {
+                                font: italic 12px/15px @opeSans;
+                                font-weight: 500;
+                                max-width: 375px;
+                            }
+                        }
+
+                        .consultant-btn {
+                            .ourWine {
+                                background-color: @price-color;
+                                font: bold 11px/14px @pt;
+                                color: white;
+                                border: 2px solid white;
+                                width: 100%;
+                                padding: 10px 15px;
+                                border-radius: 20px;
+                            }
+                        }
+
+
+                    }
+                }
+
+
+                // footer
+
+                .footer-section{
+                    .footer-container{
+                        .footerImg{
+                            width: 100%;
+                        }
+                    }
+                }
+
+
+
+
             }
         }
     }
