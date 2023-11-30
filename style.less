@@ -127,6 +127,7 @@ body {
                         color: @primary-color;
                         padding: 25px 193px;
 
+
                         a {
                             color: black;
                         }
@@ -535,6 +536,7 @@ body {
 
                         .helpText {
                             padding: 0px 15px;
+
                             h2 {
                                 font: bold 20px/37px @pt;
                                 color: @price-color;
@@ -567,15 +569,87 @@ body {
 
                 // footer
 
-                .footer-section{
-                    .footer-container{
-                        .footerImg{
+                .footer-section {
+                    .footer-container {
+                        .footerImg {
                             width: 100%;
                         }
                     }
                 }
 
 
+
+
+            }
+        }
+    }
+}
+
+
+// small laptop view
+
+@media screen and (min-width:1024px) and(max-width:1365px) {
+
+
+    body {
+        .main-section {
+            .main-container {
+                .inner-container {
+                    .site-description-section {
+                        h4 {
+                            padding: 25px 92px;
+                        }
+                    }
+
+
+
+                    .filter-listing-section {
+                        .filter-section {
+                            margin-left: 25px;
+                        }
+
+                        .listingPage-section {
+                            margin: 15px 25px;
+
+
+                            .listing-container {
+                                .product-section {
+                                    .productInfo-container {
+                                        height: auto;
+                                        .product-flex {
+                                            .productDetails {
+                                                .top-content {
+                                                    .inner-contents {
+                                                        h3 {
+                                                            max-width: 378px;
+                                                        }
+                                                    }
+
+                                                    p {
+                                                        max-width: 378px;
+                                                    }
+                                                }
+
+                                                .pricingDetails{
+
+                                                    .quantity{
+                                                        width: 15%;
+                                                    }
+                                                }
+                                            }
+
+                                        }
+
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+
+
+
+                }
 
 
             }

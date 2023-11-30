@@ -366,3 +366,26 @@ body .main-section .main-container .inner-container .contact-banner .contact-det
 body .main-section .main-container .inner-container .footer-section .footer-container .footerImg {
   width: 100%;
 }
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+  body .main-section .main-container .inner-container .site-description-section h4 {
+    padding: 25px 92px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .filter-section {
+    margin-left: 25px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section {
+    margin: 15px 25px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container {
+    height: auto;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productDetails .top-content .inner-contents h3 {
+    max-width: 378px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productDetails .top-content p {
+    max-width: 378px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productDetails .pricingDetails .quantity {
+    width: 15%;
+  }
+}
