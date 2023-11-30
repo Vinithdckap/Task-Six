@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'PT serif';
+  src: url(Fonts/PT/PTSerif-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'PT serif';
+  src: url(Fonts/PT/PTSerif-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url(Fonts/OpenSsans/OpenSans-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url(Fonts/OpenSsans/OpenSans-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url(Fonts/OpenSsans/OpenSans-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url(Fonts/Oswald/Oswald-Bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url(Fonts/Oswald/Oswald-Medium.ttf);
+  font-weight: 500;
+}
+body .main-section .main-container .inner-container .header-section .header-container .header-img {
+  width: 100%;
+  height: auto;
+}
+body .main-section .main-container .inner-container .header-section .banner-container {
+  background-image: url(/Images/Banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+body .main-section .main-container .inner-container .header-section .banner-container .breadcrumbs-div .breadCrumbs {
+  font: 600 12px/17px 'Open Sans';
+  color: #FFFFFF;
+  padding: 20px 0px 0px 28px;
+}
+body .main-section .main-container .inner-container .header-section .banner-container .shop-flex .shop-head .shopTitle {
+  font: 400 40px/53px 'PT Serif';
+  color: white;
+  text-align: center;
+}
+body .main-section .main-container .inner-container .header-section .banner-container .shop-flex .countWines {
+  font: 600 16px/22px 'Open Sans';
+  color: white;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 20px;
+}
