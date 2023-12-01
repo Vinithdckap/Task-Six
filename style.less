@@ -63,7 +63,7 @@ body {
     background-color: #FAFAFA;
 
     button,
-    .material-symbols-outlined {
+    .material-symbols-outlined, select {
         cursor: pointer;
     }
 
@@ -143,17 +143,65 @@ body {
                     // padding-bottom: 60px;
 
 
+
+
+
+
                     // filter sections styles
                     .filter-section {
                         max-width: 300px;
-                        background-color: #ECECEC;
                         width: 100%;
                         margin-left: 133px;
                         height: 100%;
 
+                        .shop-main {
+                            display: none;
+
+                            .now-shop-container {
+                                .shopping-section {
+                                    width: 100%;
+                                    max-width: 300px;
+                                    background-color: white;
+                                    padding: 15px 20px 15px 20px;
+
+                                    H3 {
+                                        font: bold 16px/22px @opeSans;
+                                        color: @secondary-color;
+                                    }
+
+                                    .availabity {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+
+                                        p {
+                                            font: 400 12px/17px @opeSans;
+                                            color: @secondary-color;
+                                            padding: 10px 0px 10px 20px;
+
+
+                                        }
+                                    }
+
+                                    .aDiv {
+                                        text-align: end;
+
+                                        a {
+                                            font: 600 12px/17px @opeSans;
+                                            color: @secondary-color;
+                                        }
+                                    }
+
+
+                                }
+                            }
+
+                        }
+
 
                         .filter-container {
                             padding: 15px 20px;
+                            background-color: #ECECEC;
 
 
                             .outerBox {
@@ -173,6 +221,7 @@ body {
                                     input {
                                         width: 100%;
                                         margin-top: 12px;
+                                        background-color: #740000;
                                     }
                                 }
                             }
@@ -240,7 +289,39 @@ body {
                         margin: 15px 133px 0px 40px;
                         width: 100%;
 
+
+
                         .listing-container {
+
+
+                            .filterBtn-section {
+                                display: none;
+                                border-radius: 25px;
+                                width: 204px;
+                                padding: 3px 20px;
+                                height: 40px;
+                                background-color: #740000;
+                                margin: 0px 0px 20px 0px;
+
+                                .filterBtn-container {
+
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+
+                                    h2 {
+                                        font: bold 16px/34px @opeSans;
+                                        color: white;
+                                    }
+
+                                    span {
+                                        color: white;
+                                    }
+                                }
+                            }
+
+
+
                             .header-listing {
 
                                 display: flex;
@@ -253,6 +334,7 @@ body {
                                     width: 100%;
                                     max-width: 60%;
                                     justify-content: flex-start;
+                                    position: relative;
 
                                     label {
                                         font: bold 12px/17px @opeSans;
@@ -268,6 +350,17 @@ body {
                                         border-radius: 25px;
                                         border-color: 1px solid #95989A;
                                         margin: 0px 10px;
+                                        cursor: pointer;
+                                        appearance: none;
+                                        -webkit-appearance: none;
+                                        -moz-appearance: none;
+                                      
+                                    }
+
+                                    span{
+                                        position: absolute;
+                                        left: 135px;
+                                        font-size: 28px;
                                     }
 
                                     img {
@@ -282,7 +375,13 @@ body {
                                     align-items: center;
                                     column-gap: 20px;
 
-                                    .list {
+                                    .list:hover {
+                                        span {
+                                            color: #740000;
+                                        }
+                                    }
+
+                                    .grid {
                                         span {
                                             color: #740000;
                                         }
@@ -295,6 +394,8 @@ body {
 
                                     display: flex;
                                     align-items: center;
+                                    position: relative
+                                    ;
 
 
                                     label {
@@ -304,13 +405,21 @@ body {
                                     }
 
                                     select {
-                                        width: 100%;
-                                        max-width: 70px;
-                                        padding: 5px;
+                                        width: 70px;
+                                        padding: 5px 0px 5px 14px;
                                         font: italic 10px/25px @opeSans;
                                         color: @secondary-color;
                                         border-radius: 25px;
                                         border-color: 1px solid #95989A;
+                                        appearance: none;
+                                        -webkit-appearance: none;
+                                        -moz-appearance: none;
+
+                                    }
+                                    span{
+                                        position: absolute;
+                                        right: 7px;
+                                        font-size: 28px;
 
                                     }
                                 }
@@ -336,10 +445,10 @@ body {
 
                                 .productInfo-container {
                                     width: 100%;
-                                    max-width: 760px;
+                                    // max-width: 760px;
                                     background-color: #FFFFFF;
-                                    box-shadow: 0 3px 10px transparent;
-                                    height: 180px;
+                                    box-shadow: 0px 3px 10px #00000008;
+                                    // height: 100%;
                                     padding: 15px 0px 15px 15px;
 
 
@@ -347,8 +456,11 @@ body {
                                         display: flex;
 
                                         .productImg {
-                                            width: 100%;
-                                            max-width: 100px;
+                                            // width: 100%;
+
+                                            .bottle {
+                                                width: 100px;
+                                            }
                                         }
 
                                         .productDetails {
@@ -369,6 +481,7 @@ body {
 
                                                     .heart {
                                                         color: #740000;
+
                                                     }
 
                                                 }
@@ -485,30 +598,70 @@ body {
 
                         }
 
-                        .pagination {
-                            padding: 30px 0px 60px 0px;
-                            text-align: center;
+                        .pagination-section {
+                            .pagination {
+                                .ulPage {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    padding: 30px 0px 60px 0px;
 
-                            a {
-                                text-decoration: none;
-                                color: black;
-                                padding-left: 4px;
-                                font: 400 12px/17px @opeSans;
-                                border-radius: 20px;
+                                    li {
+                                        cursor: pointer;
+                                        height: 24px;
+                                        width: 24px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        margin: 0px 3px;
 
+                                        a {
+                                            text-decoration: none;
+                                            color: black;
+                                            font: 400 12px/17px @opeSans;
+                                        }
+
+                                        span {
+                                            font-size: 20px;
+                                        }
+                                    }
+
+                                    li:hover {
+                                        background-color: black;
+                                        width: 24px;
+                                        height: 24px;
+                                        border-radius: 20px;
+
+                                        a {
+                                            color: white;
+                                        }
+                                    }
+
+                                    .page1 {
+                                        background-color: black;
+                                        width: 24px;
+                                        height: 24px;
+                                        border-radius: 20px;
+
+                                        a {
+                                            color: white;
+                                        }
+
+                                    }
+                                    .backward-btn{
+                                        a{
+                                            span{
+                                                font-size: 24px;
+                                                vertical-align: middle;
+                                            }
+                                        }
+                                    }
+                                }
                             }
 
-                            .page-start {
-                                background-color: black;
-                                color: white;
-                                height: 20px;
-                                width: 20px;
-
-                            }
 
                         }
                     }
-
 
 
                 }
@@ -517,38 +670,46 @@ body {
                 // contact container styles
 
                 .contact-banner {
+                    background-color: #ECECEC;
+                    width: 100%;
 
                     .contact-details {
-                        background-color: #ECECEC;
-                        width: 100%;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         padding: 15px 0px;
 
+                        .imgContainer {
 
-                        .help {
-                            .contact-icon {
-                                width: 100%;
-                                max-width: 60px;
+                            display: flex;
+                            justify-content: center;
+
+
+                            .help {
+                                .contact-icon {
+                                    width: 100%;
+                                    max-width: 60px;
+                                }
+                            }
+
+                            .helpText {
+                                padding: 0px 15px;
+
+                                h2 {
+                                    font: bold 20px/37px @pt;
+                                    color: @price-color;
+
+                                }
+
+                                p {
+                                    font: italic 12px/15px @opeSans;
+                                    font-weight: 500;
+                                    max-width: 375px;
+                                }
                             }
                         }
 
-                        .helpText {
-                            padding: 0px 15px;
 
-                            h2 {
-                                font: bold 20px/37px @pt;
-                                color: @price-color;
-
-                            }
-
-                            p {
-                                font: italic 12px/15px @opeSans;
-                                font-weight: 500;
-                                max-width: 375px;
-                            }
-                        }
 
                         .consultant-btn {
                             .ourWine {
@@ -606,7 +767,30 @@ body {
                     .filter-listing-section {
                         .filter-section {
                             margin-left: 25px;
+
+
+                            .shop-main {
+                                display: block;
+
+                                .now-shop-container {
+                                    margin-bottom: 10px;
+
+
+
+                                    .shopping-section {
+                                        .availabity {
+                                            span {
+                                                font-weight: bold;
+                                                font-size: 16px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
+
+
+
 
                         .listingPage-section {
                             margin: 15px 25px;
@@ -616,6 +800,7 @@ body {
                                 .product-section {
                                     .productInfo-container {
                                         height: auto;
+
                                         .product-flex {
                                             .productDetails {
                                                 .top-content {
@@ -630,9 +815,9 @@ body {
                                                     }
                                                 }
 
-                                                .pricingDetails{
+                                                .pricingDetails {
 
-                                                    .quantity{
+                                                    .quantity {
                                                         width: 15%;
                                                     }
                                                 }
@@ -655,4 +840,266 @@ body {
             }
         }
     }
+}
+
+
+@media screen and (max-width:1023px) {
+
+    body {
+        .main-section {
+            .main-container {
+                .inner-container {
+
+                    .header-section {
+
+                        .banner-container {
+                            .shop-flex {
+                                .shop-head {
+                                    .shopTitle {
+                                        font-size: 32px;
+                                        line-height: 42px;
+                                    }
+                                }
+
+                                .countWines {
+                                    font-size: 16px;
+                                    line-height: 22px;
+                                }
+
+                            }
+                        }
+                    }
+
+                    .site-description-section {
+                        h4 {
+                            padding: 25px 50px 0px 50px;
+
+                        }
+                    }
+
+
+                    .filter-listing-section {
+
+                        .filter-section {
+                            display: none;
+                        }
+
+
+
+
+                        .listingPage-section {
+                            margin: 15px 57px 0px 57px;
+
+                            .listing-container {
+
+                                .filterBtn-section {
+                                    display: inline-block;
+                                }
+
+                                .product-section {
+                                    .productInfo-container {
+                                        height: 100%;
+
+                                        .product-flex {
+                                            .productDetails {
+                                                .top-content {
+                                                    .inner-contents {
+                                                        h3 {
+                                                            max-width: 378px;
+                                                        }
+                                                    }
+
+                                                    p {
+                                                        max-width: 378px;
+                                                    }
+                                                }
+
+                                                .pricingDetails {
+                                                    .quantity {
+                                                        width: unset;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+
+                    .contact-banner {
+                        .contact-details {
+                            .helpText {
+                                p {
+                                    max-width: 385px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width:767px) {
+    body {
+        .main-section {
+            .main-container {
+                .inner-container {
+
+                    .site-description-section {
+                        h4 {
+                            display: none;
+                        }
+                    }
+
+
+
+
+
+                    .filter-listing-section {
+
+                        .listingPage-section {
+                            margin: 15px 20px 0px 20px;
+                            position: relative;
+
+                            .listing-container {
+
+                                .header-listing {
+                                    .listGrid-buttons {
+                                        position: absolute;
+                                        top: 17px;
+                                        right: 0px;
+                                    }
+
+                                    .showLists {
+                                        select {
+                                            width: 70px;
+                                        }
+
+                                    }
+                                }
+
+                                .product-section {
+                                    .productInfo-container {
+                                        padding: 40px 0px 20px 15px;
+
+                                        .product-flex {
+                                            .productDetails {
+                                                padding: unset;
+
+                                                .top-content {
+                                                    .inner-contents {
+                                                        h3 {
+                                                            font-size: 14px;
+                                                            line-height: 16px;
+                                                            width: 100%;
+                                                            padding-right: 20px;
+
+                                                        }
+
+                                                        .heart {
+                                                            position: absolute;
+                                                            top: 10px;
+                                                            right: 10px;
+
+                                                        }
+                                                    }
+
+                                                    p {
+                                                        font-size: 11px;
+                                                        line-height: 13px;
+                                                        width: 100%;
+                                                        padding-right: 20px;
+
+
+
+                                                    }
+                                                }
+
+                                                .pricingDetails {
+                                                    flex-direction: column;
+                                                    padding-top: 10px;
+                                                    align-items: start;
+
+                                                    .rate {
+                                                        padding-top: 10px;
+
+                                                        .viewBtn {
+                                                            display: none;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                    .contact-banner {
+
+                        .contact-details {
+                            display: unset;
+
+                            .imgContainer {
+                                padding: 25PX 20PX 0PX 20PX;
+
+                                .helpText {
+
+                                    padding: unset;
+                                    padding-left: 10px;
+
+                                    h2 {
+                                        font-size: 17px;
+                                        line-height: 20px;
+
+
+                                    }
+
+                                    p {
+                                        font-size: 12px;
+                                        line-height: 15px;
+                                        padding-top: 5px;
+
+                                    }
+
+                                }
+
+
+                            }
+
+                            .consultant-btn {
+                                padding: 14px 0px 24px 0px;
+                                text-align: center;
+
+                                .ourWine {
+                                    font-size: 11px;
+                                    line-height: 14px;
+                                    width: 180px;
+                                    padding: 8px 13px;
+
+                                }
+                            }
+
+
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
 }

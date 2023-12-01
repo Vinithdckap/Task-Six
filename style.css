@@ -42,7 +42,8 @@ body {
   background-color: #FAFAFA;
 }
 body button,
-body .material-symbols-outlined {
+body .material-symbols-outlined,
+body select {
   cursor: pointer;
 }
 body .main-section .main-container .inner-container .header-section .header-container .header-img {
@@ -86,13 +87,43 @@ body .main-section .main-container .inner-container .filter-listing-section {
 }
 body .main-section .main-container .inner-container .filter-listing-section .filter-section {
   max-width: 300px;
-  background-color: #ECECEC;
   width: 100%;
   margin-left: 133px;
   height: 100%;
 }
+body .main-section .main-container .inner-container .filter-listing-section .filter-section .shop-main {
+  display: none;
+}
+body .main-section .main-container .inner-container .filter-listing-section .filter-section .shop-main .now-shop-container .shopping-section {
+  width: 100%;
+  max-width: 300px;
+  background-color: white;
+  padding: 15px 20px 15px 20px;
+}
+body .main-section .main-container .inner-container .filter-listing-section .filter-section .shop-main .now-shop-container .shopping-section H3 {
+  font: bold 16px/22px 'Open Sans';
+  color: black;
+}
+body .main-section .main-container .inner-container .filter-listing-section .filter-section .shop-main .now-shop-container .shopping-section .availabity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .main-section .main-container .inner-container .filter-listing-section .filter-section .shop-main .now-shop-container .shopping-section .availabity p {
+  font: 400 12px/17px 'Open Sans';
+  color: black;
+  padding: 10px 0px 10px 20px;
+}
+body .main-section .main-container .inner-container .filter-listing-section .filter-section .shop-main .now-shop-container .shopping-section .aDiv {
+  text-align: end;
+}
+body .main-section .main-container .inner-container .filter-listing-section .filter-section .shop-main .now-shop-container .shopping-section .aDiv a {
+  font: 600 12px/17px 'Open Sans';
+  color: black;
+}
 body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container {
   padding: 15px 20px;
+  background-color: #ECECEC;
 }
 body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container .outerBox .pricing-div {
   display: flex;
@@ -105,6 +136,7 @@ body .main-section .main-container .inner-container .filter-listing-section .fil
 body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container .outerBox form input {
   width: 100%;
   margin-top: 12px;
+  background-color: #740000;
 }
 body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container .filter-contents .inner-filter-contents {
   padding: 36px 0px 8px 0px;
@@ -142,6 +174,27 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
   margin: 15px 133px 0px 40px;
   width: 100%;
 }
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .filterBtn-section {
+  display: none;
+  border-radius: 25px;
+  width: 204px;
+  padding: 3px 20px;
+  height: 40px;
+  background-color: #740000;
+  margin: 0px 0px 20px 0px;
+}
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .filterBtn-section .filterBtn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .filterBtn-section .filterBtn-container h2 {
+  font: bold 16px/34px 'Open Sans';
+  color: white;
+}
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .filterBtn-section .filterBtn-container span {
+  color: white;
+}
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing {
   display: flex;
   align-items: center;
@@ -153,6 +206,7 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
   width: 100%;
   max-width: 60%;
   justify-content: flex-start;
+  position: relative;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .search-container label {
   font: bold 12px/17px 'Open Sans';
@@ -167,6 +221,15 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
   border-radius: 25px;
   border-color: 1px solid #95989A;
   margin: 0px 10px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .search-container span {
+  position: absolute;
+  left: 135px;
+  font-size: 28px;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .search-container img {
   width: 100%;
@@ -178,12 +241,17 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
   align-items: center;
   column-gap: 20px;
 }
-body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .listGrid-buttons .list span {
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .listGrid-buttons .list:hover span {
+  color: #740000;
+}
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .listGrid-buttons .grid span {
   color: #740000;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .showLists {
   display: flex;
   align-items: center;
+  position: relative
+                                    ;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .showLists label {
   font: bold 12px/17px 'Open Sans';
@@ -191,13 +259,20 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
   margin-right: 7px;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .showLists select {
-  width: 100%;
-  max-width: 70px;
-  padding: 5px;
+  width: 70px;
+  padding: 5px 0px 5px 14px;
   font: italic 10px/25px 'Open Sans';
   color: black;
   border-radius: 25px;
   border-color: 1px solid #95989A;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .showLists span {
+  position: absolute;
+  right: 7px;
+  font-size: 28px;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container hr {
   margin: 12px 0px 20px;
@@ -214,18 +289,15 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container {
   width: 100%;
-  max-width: 760px;
   background-color: #FFFFFF;
-  box-shadow: 0 3px 10px transparent;
-  height: 180px;
+  box-shadow: 0px 3px 10px #00000008;
   padding: 15px 0px 15px 15px;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex {
   display: flex;
 }
-body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productImg {
-  width: 100%;
-  max-width: 100px;
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productImg .bottle {
+  width: 100px;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productDetails {
   width: 100%;
@@ -313,43 +385,77 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .last {
   border-bottom: 1px solid black;
 }
-body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .pagination {
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .pagination-section .pagination .ulPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 30px 0px 60px 0px;
-  text-align: center;
 }
-body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .pagination a {
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .pagination-section .pagination .ulPage li {
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 3px;
+}
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .pagination-section .pagination .ulPage li a {
   text-decoration: none;
   color: black;
-  padding-left: 4px;
   font: 400 12px/17px 'Open Sans';
+}
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .pagination-section .pagination .ulPage li span {
+  font-size: 20px;
+}
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .pagination-section .pagination .ulPage li:hover {
+  background-color: black;
+  width: 24px;
+  height: 24px;
   border-radius: 20px;
 }
-body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .pagination .page-start {
-  background-color: black;
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .pagination-section .pagination .ulPage li:hover a {
   color: white;
-  height: 20px;
-  width: 20px;
 }
-body .main-section .main-container .inner-container .contact-banner .contact-details {
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .pagination-section .pagination .ulPage .page1 {
+  background-color: black;
+  width: 24px;
+  height: 24px;
+  border-radius: 20px;
+}
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .pagination-section .pagination .ulPage .page1 a {
+  color: white;
+}
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .pagination-section .pagination .ulPage .backward-btn a span {
+  font-size: 24px;
+  vertical-align: middle;
+}
+body .main-section .main-container .inner-container .contact-banner {
   background-color: #ECECEC;
   width: 100%;
+}
+body .main-section .main-container .inner-container .contact-banner .contact-details {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 15px 0px;
 }
-body .main-section .main-container .inner-container .contact-banner .contact-details .help .contact-icon {
+body .main-section .main-container .inner-container .contact-banner .contact-details .imgContainer {
+  display: flex;
+  justify-content: center;
+}
+body .main-section .main-container .inner-container .contact-banner .contact-details .imgContainer .help .contact-icon {
   width: 100%;
   max-width: 60px;
 }
-body .main-section .main-container .inner-container .contact-banner .contact-details .helpText {
+body .main-section .main-container .inner-container .contact-banner .contact-details .imgContainer .helpText {
   padding: 0px 15px;
 }
-body .main-section .main-container .inner-container .contact-banner .contact-details .helpText h2 {
+body .main-section .main-container .inner-container .contact-banner .contact-details .imgContainer .helpText h2 {
   font: bold 20px/37px 'PT Serif';
   color: #740000;
 }
-body .main-section .main-container .inner-container .contact-banner .contact-details .helpText p {
+body .main-section .main-container .inner-container .contact-banner .contact-details .imgContainer .helpText p {
   font: italic 12px/15px 'Open Sans';
   font-weight: 500;
   max-width: 375px;
@@ -373,6 +479,16 @@ body .main-section .main-container .inner-container .footer-section .footer-cont
   body .main-section .main-container .inner-container .filter-listing-section .filter-section {
     margin-left: 25px;
   }
+  body .main-section .main-container .inner-container .filter-listing-section .filter-section .shop-main {
+    display: block;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .filter-section .shop-main .now-shop-container {
+    margin-bottom: 10px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .filter-section .shop-main .now-shop-container .shopping-section .availabity span {
+    font-weight: bold;
+    font-size: 16px;
+  }
   body .main-section .main-container .inner-container .filter-listing-section .listingPage-section {
     margin: 15px 25px;
   }
@@ -387,5 +503,122 @@ body .main-section .main-container .inner-container .footer-section .footer-cont
   }
   body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productDetails .pricingDetails .quantity {
     width: 15%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  body .main-section .main-container .inner-container .header-section .banner-container .shop-flex .shop-head .shopTitle {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  body .main-section .main-container .inner-container .header-section .banner-container .shop-flex .countWines {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  body .main-section .main-container .inner-container .site-description-section h4 {
+    padding: 25px 50px 0px 50px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .filter-section {
+    display: none;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section {
+    margin: 15px 57px 0px 57px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .filterBtn-section {
+    display: inline-block;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container {
+    height: 100%;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productDetails .top-content .inner-contents h3 {
+    max-width: 378px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productDetails .top-content p {
+    max-width: 378px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productDetails .pricingDetails .quantity {
+    width: unset;
+  }
+  body .main-section .main-container .inner-container .contact-banner .contact-details .helpText p {
+    max-width: 385px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body .main-section .main-container .inner-container .site-description-section h4 {
+    display: none;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section {
+    margin: 15px 20px 0px 20px;
+    position: relative;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .listGrid-buttons {
+    position: absolute;
+    top: 17px;
+    right: 0px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .showLists select {
+    width: 70px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container {
+    padding: 40px 0px 20px 15px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productDetails {
+    padding: unset;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productDetails .top-content .inner-contents h3 {
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+    padding-right: 20px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productDetails .top-content .inner-contents .heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productDetails .top-content p {
+    font-size: 11px;
+    line-height: 13px;
+    width: 100%;
+    padding-right: 20px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productDetails .pricingDetails {
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: start;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productDetails .pricingDetails .rate {
+    padding-top: 10px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-section .productInfo-container .product-flex .productDetails .pricingDetails .rate .viewBtn {
+    display: none;
+  }
+  body .main-section .main-container .inner-container .contact-banner .contact-details {
+    display: unset;
+  }
+  body .main-section .main-container .inner-container .contact-banner .contact-details .imgContainer {
+    padding: 25PX 20PX 0PX 20PX;
+  }
+  body .main-section .main-container .inner-container .contact-banner .contact-details .imgContainer .helpText {
+    padding: unset;
+    padding-left: 10px;
+  }
+  body .main-section .main-container .inner-container .contact-banner .contact-details .imgContainer .helpText h2 {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  body .main-section .main-container .inner-container .contact-banner .contact-details .imgContainer .helpText p {
+    font-size: 12px;
+    line-height: 15px;
+    padding-top: 5px;
+  }
+  body .main-section .main-container .inner-container .contact-banner .contact-details .consultant-btn {
+    padding: 14px 0px 24px 0px;
+    text-align: center;
+  }
+  body .main-section .main-container .inner-container .contact-banner .contact-details .consultant-btn .ourWine {
+    font-size: 11px;
+    line-height: 14px;
+    width: 180px;
+    padding: 8px 13px;
   }
 }
