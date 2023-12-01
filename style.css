@@ -74,6 +74,10 @@ body .main-section .main-container .inner-container .header-section .banner-cont
   padding-top: 8px;
   padding-bottom: 20px;
 }
+body .main-section .main-container .inner-container .site-description-section {
+  max-width: 1366px;
+  margin: 0 auto;
+}
 body .main-section .main-container .inner-container .site-description-section h4 {
   font: 600 14px/20px 'Open Sans';
   color: #707070;
@@ -84,6 +88,8 @@ body .main-section .main-container .inner-container .site-description-section h4
 }
 body .main-section .main-container .inner-container .filter-listing-section {
   display: flex;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 body .main-section .main-container .inner-container .filter-listing-section .filter-section {
   max-width: 300px;
@@ -136,7 +142,7 @@ body .main-section .main-container .inner-container .filter-listing-section .fil
 body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container .outerBox form input {
   width: 100%;
   margin-top: 12px;
-  background-color: #740000;
+  accent-color: #740000;
 }
 body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container .filter-contents .inner-filter-contents {
   padding: 36px 0px 8px 0px;
@@ -163,6 +169,20 @@ body .main-section .main-container .inner-container .filter-listing-section .fil
 body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container .filter-contents .filter-category .filter-option .dropDown-div .expand {
   font-size: 28px;
   color: white;
+}
+body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container .filter-contents .filter-category .type {
+  display: none;
+  background-color: white;
+}
+body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container .filter-contents .filter-category .type ul {
+  padding: 10px 20px;
+}
+body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container .filter-contents .filter-category .type ul li {
+  font: 400 14px/32px 'Open Sans';
+  list-style: none;
+}
+body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container .filter-contents .filter-category .type.open {
+  display: block;
 }
 body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container .filter-contents > :nth-child(2) {
   border-radius: 8px 8px 0px 0px;
@@ -250,8 +270,7 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .showLists {
   display: flex;
   align-items: center;
-  position: relative
-                                    ;
+  position: relative;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .showLists label {
   font: bold 12px/17px 'Open Sans';

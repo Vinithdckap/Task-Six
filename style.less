@@ -63,7 +63,8 @@ body {
     background-color: #FAFAFA;
 
     button,
-    .material-symbols-outlined, select {
+    .material-symbols-outlined,
+    select {
         cursor: pointer;
     }
 
@@ -122,6 +123,9 @@ body {
 
 
                 .site-description-section {
+                    max-width: 1366px;
+                    margin: 0 auto;
+
                     h4 {
                         font: 600 14px/20px @opeSans;
                         color: @primary-color;
@@ -141,8 +145,8 @@ body {
                 .filter-listing-section {
                     display: flex;
                     // padding-bottom: 60px;
-
-
+                    max-width: 1366px;
+                    margin: 0 auto;
 
 
 
@@ -221,7 +225,7 @@ body {
                                     input {
                                         width: 100%;
                                         margin-top: 12px;
-                                        background-color: #740000;
+                                        accent-color: #740000;
                                     }
                                 }
                             }
@@ -268,6 +272,23 @@ body {
                                             }
                                         }
 
+                                    }
+
+                                    .type {
+                                        display: none;
+                                        background-color: white;
+
+                                        ul {
+                                            padding: 10px 20px;
+
+                                            li {
+                                                font: 400 14px/32px @opeSans;
+                                                list-style: none;
+                                            }
+                                        }
+                                    }
+                                    .type.open{
+                                        display: block;
                                     }
                                 }
                             }
@@ -354,10 +375,10 @@ body {
                                         appearance: none;
                                         -webkit-appearance: none;
                                         -moz-appearance: none;
-                                      
+
                                     }
 
-                                    span{
+                                    span {
                                         position: absolute;
                                         left: 135px;
                                         font-size: 28px;
@@ -394,8 +415,7 @@ body {
 
                                     display: flex;
                                     align-items: center;
-                                    position: relative
-                                    ;
+                                    position: relative;
 
 
                                     label {
@@ -416,7 +436,8 @@ body {
                                         -moz-appearance: none;
 
                                     }
-                                    span{
+
+                                    span {
                                         position: absolute;
                                         right: 7px;
                                         font-size: 28px;
@@ -648,9 +669,10 @@ body {
                                         }
 
                                     }
-                                    .backward-btn{
-                                        a{
-                                            span{
+
+                                    .backward-btn {
+                                        a {
+                                            span {
                                                 font-size: 24px;
                                                 vertical-align: middle;
                                             }
