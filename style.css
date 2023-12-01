@@ -51,7 +51,7 @@ body .main-section .main-container .inner-container .header-section .header-cont
   height: auto;
 }
 body .main-section .main-container .inner-container .header-section .banner-container {
-  background-image: url(/Images/Banner.png);
+  background-image: url(Images/Banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
