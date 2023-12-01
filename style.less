@@ -287,7 +287,8 @@ body {
                                             }
                                         }
                                     }
-                                    .type.open{
+
+                                    .type.open {
                                         display: block;
                                     }
                                 }
@@ -452,165 +453,252 @@ body {
                                 color: black;
                             }
 
-                            .product-section {
+                            .product-listing-grids {
+                                display: none;
 
-                                padding-bottom: 20px;
-                                position: relative;
+                                .product-section {
 
-                                .new {
+                                    padding-bottom: 20px;
+                                    position: relative;
 
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                }
+                                    .new {
 
-                                .productInfo-container {
-                                    width: 100%;
-                                    // max-width: 760px;
-                                    background-color: #FFFFFF;
-                                    box-shadow: 0px 3px 10px #00000008;
-                                    // height: 100%;
-                                    padding: 15px 0px 15px 15px;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                    }
+
+                                    .productInfo-container {
+                                        width: 100%;
+                                        // max-width: 760px;
+                                        background-color: #FFFFFF;
+                                        box-shadow: 0px 3px 10px #00000008;
+                                        // height: 100%;
+                                        padding: 15px 0px 15px 15px;
 
 
-                                    .product-flex {
-                                        display: flex;
+                                        .product-flex {
+                                            display: flex;
 
-                                        .productImg {
-                                            // width: 100%;
+                                            .productImg {
+                                                // width: 100%;
 
-                                            .bottle {
-                                                width: 100px;
-                                            }
-                                        }
-
-                                        .productDetails {
-                                            width: 100%;
-                                            padding: 0px 20px 0px 30px;
-
-                                            .top-content {
-
-                                                // max-width: 484px;
-
-                                                .inner-contents {
-                                                    display: flex;
-                                                    justify-content: space-between;
-
-                                                    h3 {
-                                                        font: 600 16px/20px @opeSans;
-                                                    }
-
-                                                    .heart {
-                                                        color: #740000;
-
-                                                    }
-
+                                                .bottle {
+                                                    width: 100px;
                                                 }
-
-                                                p {
-                                                    font: 600 12px/16px @opeSans;
-                                                    color: @primary-color;
-                                                    padding-top: 10px;
-                                                    max-width: 484px;
-
-                                                    & a {
-                                                        color: black;
-                                                    }
-                                                }
-
-
                                             }
 
-                                            .pricingDetails {
+                                            .productDetails {
+                                                width: 100%;
+                                                padding: 0px 20px 0px 30px;
 
-                                                display: flex;
-                                                justify-content: space-between;
-                                                align-items: center;
-                                                padding-top: 45px;
+                                                .top-content {
 
-                                                .quantity {
-                                                    width: 50%;
+                                                    // max-width: 484px;
 
-                                                    .wineQnty {
+                                                    .inner-contents {
                                                         display: flex;
-                                                        width: 100%;
-                                                        max-width: 60px;
-                                                        border: 1px solid #707070;
+                                                        justify-content: space-between;
 
-                                                        .totalQnty {
-                                                            font: 400 12px/16px @oswald;
-                                                            background-color: #707070;
-                                                            width: 100%;
-                                                            max-width: 30px;
-                                                            height: 24px;
-                                                            text-align: center;
-                                                            color: white;
-                                                            padding: 5px;
+                                                        h3 {
+                                                            font: 600 16px/20px @opeSans;
                                                         }
 
-                                                        .qnty {
-                                                            font: 400 12px/16px @oswald;
-                                                            width: 100%;
-                                                            max-width: 30px;
-                                                            height: 24px;
-                                                            text-align: center;
-                                                            color: #707070;
-                                                            padding: 5px;
+                                                        .heart {
+                                                            color: #740000;
+
                                                         }
+
                                                     }
-                                                }
-
-
-
-
-                                                .rate {
-                                                    display: flex;
-                                                    align-items: center;
 
                                                     p {
-
                                                         font: 600 12px/16px @opeSans;
                                                         color: @primary-color;
+                                                        padding-top: 10px;
+                                                        max-width: 484px;
 
+                                                        & a {
+                                                            color: black;
+                                                        }
                                                     }
 
-                                                    span {
-                                                        font: bold 20px/16px @pt;
-                                                        color: @price-color;
-                                                        padding-left: 6px;
 
-                                                    }
+                                                }
 
+                                                .pricingDetails {
 
-                                                    .viewBtn {
-                                                        margin-left: 15px;
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    align-items: center;
+                                                    padding-top: 45px;
 
-                                                        button {
+                                                    .quantity {
+                                                        width: 50%;
+
+                                                        .wineQnty {
+                                                            display: flex;
                                                             width: 100%;
-                                                            max-width: 100px;
-                                                            color: white;
-                                                            font: bold 10px/13px @pt ;
-                                                            background-color: #0088CC;
-                                                            border-radius: 31px;
-                                                            padding: 5px 12px;
-                                                            border: none;
+                                                            max-width: 60px;
+                                                            border: 1px solid #707070;
+
+                                                            .totalQnty {
+                                                                font: 400 12px/16px @oswald;
+                                                                background-color: #707070;
+                                                                width: 100%;
+                                                                max-width: 30px;
+                                                                height: 24px;
+                                                                text-align: center;
+                                                                color: white;
+                                                                padding: 5px;
+                                                            }
+
+                                                            .qnty {
+                                                                font: 400 12px/16px @oswald;
+                                                                width: 100%;
+                                                                max-width: 30px;
+                                                                height: 24px;
+                                                                text-align: center;
+                                                                color: #707070;
+                                                                padding: 5px;
+                                                            }
+                                                        }
+                                                    }
+
+
+
+
+                                                    .rate {
+                                                        display: flex;
+                                                        align-items: center;
+
+                                                        p {
+
+                                                            font: 600 12px/16px @opeSans;
+                                                            color: @primary-color;
+
+                                                        }
+
+                                                        span {
+                                                            font: bold 20px/16px @pt;
+                                                            color: @price-color;
+                                                            padding-left: 6px;
+
+                                                        }
+
+
+                                                        .viewBtn {
+                                                            margin-left: 15px;
+
+                                                            button {
+                                                                width: 100%;
+                                                                max-width: 100px;
+                                                                color: white;
+                                                                font: bold 10px/13px @pt ;
+                                                                background-color: #0088CC;
+                                                                border-radius: 31px;
+                                                                padding: 5px 12px;
+                                                                border: none;
+                                                            }
                                                         }
                                                     }
                                                 }
+
+
                                             }
 
 
                                         }
+
+
+
+
+
+                                    }
+                                }
+                            }
+
+                            .grid {
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr;
+                                gap: 15px;
+                                // display: block;
+
+                                .product-section {
+                                    width: 100%;
+                                    max-width: 250px;
+
+                                    .productInfo-container {
+                                        padding: 20px 0px 15px 0px;
+                                        height: 100%;
+
+                                        .product-flex {
+                                            flex-direction: column;
+                                            position: relative;
+
+                                            .productImg {
+                                                text-align: center;
+                                                padding-bottom: 10px;
+
+                                                .bottle {
+                                                    width: unset;
+                                                }
+
+                                            }
+
+                                            .productDetails {
+
+                                                .top-content {
+                                                    .inner-contents {
+
+                                                        h3 {
+                                                            height: 100%;
+                                                            height: 60px;
+                                                        }
+
+                                                        .heart {
+                                                            position: absolute;
+                                                            top: -10px;
+                                                            right: 10px;
+                                                        }
+                                                    }
+
+                                                    p {
+                                                        display: none;
+                                                    }
+                                                }
+
+                                                .pricingDetails {
+                                                    flex-direction: column;
+                                                    align-items: start;
+                                                    justify-content: unset;
+                                                    padding: 15px 15px 0px 0px;
+
+
+
+                                                    .quantity {
+                                                        padding-bottom: 15px;
+                                                    }
+
+                                                    .rate {
+                                                        p {}
+
+                                                        .viewBtn {
+                                                            display: none;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
 
 
                                     }
 
-
-
-
-
                                 }
                             }
+
+
+
 
                             .last {
                                 border-bottom: 1px solid black;
@@ -819,36 +907,41 @@ body {
 
 
                             .listing-container {
-                                .product-section {
-                                    .productInfo-container {
-                                        height: auto;
 
-                                        .product-flex {
-                                            .productDetails {
-                                                .top-content {
-                                                    .inner-contents {
-                                                        h3 {
+
+                                .product-listing-grids {
+                                    .product-section {
+                                        .productInfo-container {
+                                            height: auto;
+
+                                            .product-flex {
+                                                .productDetails {
+                                                    .top-content {
+                                                        .inner-contents {
+                                                            h3 {
+                                                                max-width: 378px;
+                                                            }
+                                                        }
+
+                                                        p {
                                                             max-width: 378px;
                                                         }
                                                     }
 
-                                                    p {
-                                                        max-width: 378px;
+                                                    .pricingDetails {
+
+                                                        .quantity {
+                                                            width: 15%;
+                                                        }
                                                     }
                                                 }
 
-                                                .pricingDetails {
-
-                                                    .quantity {
-                                                        width: 15%;
-                                                    }
-                                                }
                                             }
 
                                         }
-
                                     }
                                 }
+
                             }
 
                         }
@@ -918,33 +1011,39 @@ body {
                                     display: inline-block;
                                 }
 
-                                .product-section {
-                                    .productInfo-container {
-                                        height: 100%;
 
-                                        .product-flex {
-                                            .productDetails {
-                                                .top-content {
-                                                    .inner-contents {
-                                                        h3 {
+                                .product-listing-grids {
+
+                                    .product-section {
+                                        .productInfo-container {
+                                            height: 100%;
+
+                                            .product-flex {
+                                                .productDetails {
+                                                    .top-content {
+                                                        .inner-contents {
+                                                            h3 {
+                                                                max-width: 378px;
+                                                            }
+                                                        }
+
+                                                        p {
                                                             max-width: 378px;
                                                         }
                                                     }
 
-                                                    p {
-                                                        max-width: 378px;
-                                                    }
-                                                }
-
-                                                .pricingDetails {
-                                                    .quantity {
-                                                        width: unset;
+                                                    .pricingDetails {
+                                                        .quantity {
+                                                            width: unset;
+                                                        }
                                                     }
                                                 }
                                             }
                                         }
                                     }
                                 }
+
+
                             }
 
                         }
@@ -1007,53 +1106,56 @@ body {
                                     }
                                 }
 
-                                .product-section {
-                                    .productInfo-container {
-                                        padding: 40px 0px 20px 15px;
 
-                                        .product-flex {
-                                            .productDetails {
-                                                padding: unset;
+                                .product-listing-grids {
+                                    .product-section {
+                                        .productInfo-container {
+                                            padding: 40px 0px 20px 15px;
 
-                                                .top-content {
-                                                    .inner-contents {
-                                                        h3 {
-                                                            font-size: 14px;
-                                                            line-height: 16px;
+                                            .product-flex {
+                                                .productDetails {
+                                                    padding: unset;
+
+                                                    .top-content {
+                                                        .inner-contents {
+                                                            h3 {
+                                                                font-size: 14px;
+                                                                line-height: 16px;
+                                                                width: 100%;
+                                                                padding-right: 20px;
+
+                                                            }
+
+                                                            .heart {
+                                                                position: absolute;
+                                                                top: 10px;
+                                                                right: 10px;
+
+                                                            }
+                                                        }
+
+                                                        p {
+                                                            font-size: 11px;
+                                                            line-height: 13px;
                                                             width: 100%;
                                                             padding-right: 20px;
 
-                                                        }
 
-                                                        .heart {
-                                                            position: absolute;
-                                                            top: 10px;
-                                                            right: 10px;
 
                                                         }
                                                     }
 
-                                                    p {
-                                                        font-size: 11px;
-                                                        line-height: 13px;
-                                                        width: 100%;
-                                                        padding-right: 20px;
-
-
-
-                                                    }
-                                                }
-
-                                                .pricingDetails {
-                                                    flex-direction: column;
-                                                    padding-top: 10px;
-                                                    align-items: start;
-
-                                                    .rate {
+                                                    .pricingDetails {
+                                                        flex-direction: column;
                                                         padding-top: 10px;
+                                                        align-items: start;
 
-                                                        .viewBtn {
-                                                            display: none;
+                                                        .rate {
+                                                            padding-top: 10px;
+
+                                                            .viewBtn {
+                                                                display: none;
+                                                            }
                                                         }
                                                     }
                                                 }
@@ -1061,6 +1163,10 @@ body {
                                         }
                                     }
                                 }
+                                .grid{
+                                    grid-template-columns: 1fr 1fr;
+                                }
+
                             }
                         }
                     }
