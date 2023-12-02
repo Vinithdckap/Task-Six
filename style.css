@@ -722,7 +722,8 @@ body .main-section .main-container .inner-container .footer-section .footer-cont
   body .main-section .main-container .inner-container .header-section .header-container .header-img {
     display: none;
   }
-  body .main-section .main-container .inner-container .header-section .header-container img {
+  body .main-section .main-container .inner-container .header-section .header-container .mobile-header {
+    display: block;
     width: 100%;
   }
   body .main-section .main-container .inner-container .site-description-section h4 {
