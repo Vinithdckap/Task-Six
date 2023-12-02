@@ -86,6 +86,27 @@ body .main-section .main-container .inner-container .site-description-section h4
 body .main-section .main-container .inner-container .site-description-section h4 a {
   color: black;
 }
+body .main-section .main-container .inner-container .filterBtn-section {
+  display: none;
+  border-radius: 25px;
+  width: 204px;
+  padding: 3px 20px;
+  height: 40px;
+  background-color: #740000;
+  margin: 0px 0px 20px 0px;
+}
+body .main-section .main-container .inner-container .filterBtn-section .filterBtn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main-section .main-container .inner-container .filterBtn-section .filterBtn-container h2 {
+  font: bold 16px/34px 'Open Sans';
+  color: white;
+}
+body .main-section .main-container .inner-container .filterBtn-section .filterBtn-container span {
+  color: white;
+}
 body .main-section .main-container .inner-container .filter-listing-section {
   display: flex;
   max-width: 1366px;
@@ -194,27 +215,6 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
   margin: 15px 133px 0px 40px;
   width: 100%;
 }
-body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .filterBtn-section {
-  display: none;
-  border-radius: 25px;
-  width: 204px;
-  padding: 3px 20px;
-  height: 40px;
-  background-color: #740000;
-  margin: 0px 0px 20px 0px;
-}
-body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .filterBtn-section .filterBtn-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .filterBtn-section .filterBtn-container h2 {
-  font: bold 16px/34px 'Open Sans';
-  color: white;
-}
-body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .filterBtn-section .filterBtn-container span {
-  color: white;
-}
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing {
   display: flex;
   align-items: center;
@@ -259,6 +259,9 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .listGrid-buttons {
   display: flex;
   column-gap: 20px;
+}
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .listGrid-buttons .grid {
+  color: #BABABA;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .listGrid-buttons .grid:hover span {
   color: #740000;
@@ -335,6 +338,9 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
   font: 600 16px/20px 'Open Sans';
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-listing .product-section .productInfo-container .product-flex .productDetails .top-content .inner-contents .heart {
+  color: cadetblue;
+}
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-listing .product-section .productInfo-container .product-flex .productDetails .top-content .inner-contents .heart:hover {
   color: #740000;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-listing .product-section .productInfo-container .product-flex .productDetails .top-content p {
@@ -434,7 +440,6 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .grid-products .product-section .productInfo-container .product-flex {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .grid-products .product-section .productInfo-container .product-flex .productImg {
   text-align: center;
@@ -447,6 +452,11 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
   width: 100%;
   padding: 0px 20px 0px 20px;
 }
+@media screen and (max-width: 1040px) {
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .grid-products .product-section .productInfo-container .product-flex .productDetails {
+    padding: 0px 20px 0px 16px;
+  }
+}
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .grid-products .product-section .productInfo-container .product-flex .productDetails .top-content .inner-contents {
   display: flex;
   justify-content: space-between;
@@ -458,8 +468,11 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .grid-products .product-section .productInfo-container .product-flex .productDetails .top-content .inner-contents .heart {
   position: absolute;
-  top: -10px;
-  right: 10px;
+  top: 12px;
+  right: 14px;
+  color: cadetblue;
+}
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .grid-products .product-section .productInfo-container .product-flex .productDetails .top-content .inner-contents .heart:hover {
   color: #740000;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .grid-products .product-section .productInfo-container .product-flex .productDetails .top-content p {
@@ -650,14 +663,27 @@ body .main-section .main-container .inner-container .footer-section .footer-cont
   body .main-section .main-container .inner-container .site-description-section h4 {
     padding: 25px 50px 0px 50px;
   }
-  body .main-section .main-container .inner-container .filter-listing-section .filter-section {
-    display: none;
+  body .main-section .main-container .inner-container .filterBtn-section {
+    display: inline-block;
+    margin: 20px 0px 0px 57px;
   }
-  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section {
+  body .main-section .main-container .inner-container .filter-listing-section {
+    flex-direction: column;
     margin: 15px 57px 0px 57px;
   }
-  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .filterBtn-section {
-    display: inline-block;
+  body .main-section .main-container .inner-container .filter-listing-section .filter-section {
+    display: none;
+    width: 100%;
+    max-width: 100%;
+    margin-left: unset;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .filterOpen {
+    display: block;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section {
+    width: unset;
+    margin: unset;
+    margin-top: 15px;
   }
   body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-listing .product-section .productInfo-container {
     height: 100%;
@@ -679,14 +705,23 @@ body .main-section .main-container .inner-container .footer-section .footer-cont
   body .main-section .main-container .inner-container .site-description-section h4 {
     display: none;
   }
+  body .main-section .main-container .inner-container .filterBtn-section {
+    margin: 15px 20px 0px 20px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section {
+    margin: unset;
+    position: relative;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container {
+    margin-top: 10px;
+  }
   body .main-section .main-container .inner-container .filter-listing-section .listingPage-section {
     margin: 15px 20px 0px 20px;
-    position: relative;
   }
   body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .listGrid-buttons {
     position: absolute;
-    top: 17px;
-    right: 0px;
+    top: -27px;
+    right: 25px;
   }
   body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .header-listing .listGrid-buttons .list {
     height: 24px;
@@ -761,6 +796,12 @@ body .main-section .main-container .inner-container .footer-section .footer-cont
   }
   body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .grid-products .product-section .productInfo-container .product-flex .productDetails .pricingDetails .rate {
     padding-top: 10px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .grid-products .product-section .productInfo-container .product-flex .productDetails .pricingDetails .rate p {
+    font-size: 11px;
+  }
+  body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .grid-products .product-section .productInfo-container .product-flex .productDetails .pricingDetails .rate span {
+    font-size: 16px;
   }
   body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .grid-products .product-section .productInfo-container .product-flex .productDetails .pricingDetails .rate .viewBtn {
     display: none;

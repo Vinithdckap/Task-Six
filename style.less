@@ -139,6 +139,32 @@ body {
 
                 }
 
+                .filterBtn-section {
+                    display: none;
+                    border-radius: 25px;
+                    width: 204px;
+                    padding: 3px 20px;
+                    height: 40px;
+                    background-color: #740000;
+                    margin: 0px 0px 20px 0px;
+
+                    .filterBtn-container {
+
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        h2 {
+                            font: bold 16px/34px @opeSans;
+                            color: white;
+                        }
+
+                        span {
+                            color: white;
+                        }
+                    }
+                }
+
 
                 // filter and listing page section styles
 
@@ -206,6 +232,7 @@ body {
                         .filter-container {
                             padding: 15px 20px;
                             background-color: #ECECEC;
+
 
 
                             .outerBox {
@@ -312,31 +339,7 @@ body {
                         width: 100%;
 
                         .listing-container {
-                            .filterBtn-section {
-                                display: none;
-                                border-radius: 25px;
-                                width: 204px;
-                                padding: 3px 20px;
-                                height: 40px;
-                                background-color: #740000;
-                                margin: 0px 0px 20px 0px;
 
-                                .filterBtn-container {
-
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-
-                                    h2 {
-                                        font: bold 16px/34px @opeSans;
-                                        color: white;
-                                    }
-
-                                    span {
-                                        color: white;
-                                    }
-                                }
-                            }
 
 
 
@@ -397,10 +400,17 @@ body {
                                     //     color: #740000;
                                     // }
 
+
+
+                                    .grid {
+                                        color: #BABABA;
+                                    }
+
                                     .grid:hover {
                                         span {
                                             color: #740000;
                                         }
+
                                     }
 
                                     .list {
@@ -509,8 +519,12 @@ body {
                                                         }
 
                                                         .heart {
-                                                            color: #740000;
 
+                                                            color: cadetblue
+                                                        }
+
+                                                        .heart:hover {
+                                                            color: #740000;
                                                         }
 
                                                     }
@@ -623,10 +637,10 @@ body {
                                 .last {
                                     border-bottom: 1px solid black;
                                 }
-    
+
                             }
 
-                           
+
 
                             .grid-products {
 
@@ -659,7 +673,7 @@ body {
                                         .product-flex {
                                             display: flex;
                                             flex-direction: column;
-                                            position: relative;
+                                            // position: relative;
 
                                             .productImg {
                                                 text-align: center;
@@ -675,6 +689,10 @@ body {
                                                 width: 100%;
                                                 padding: 0px 20px 0px 20px;
 
+                                                @media screen and (max-width:1040px) {
+                                                    padding: 0px 20px 0px 16px;
+                                                }
+
                                                 .top-content {
                                                     .inner-contents {
                                                         display: flex;
@@ -689,10 +707,14 @@ body {
 
                                                         .heart {
                                                             position: absolute;
-                                                            top: -10px;
-                                                            right: 10px;
-                                                            color: #740000;
+                                                            top: 12px;
+                                                            right: 14px;
+                                                            color: cadetblue;
 
+                                                        }
+
+                                                        .heart:hover {
+                                                            color: #740000;
                                                         }
                                                     }
 
@@ -774,9 +796,10 @@ body {
 
                                 }
 
-                            
+
                             }
-                            .gap{
+
+                            .gap {
                                 padding-bottom: 30px;
                             }
 
@@ -1073,24 +1096,37 @@ body {
                         }
                     }
 
+                    .filterBtn-section {
+                        display: inline-block;
+                        margin: 20px 0px 0px 57px;
+
+                    }
+
 
                     .filter-listing-section {
+                        flex-direction: column;
+                        margin: 15px 57px 0px 57px;
+
 
                         .filter-section {
                             display: none;
+                            width: 100%;
+                            max-width: 100%;
+                            margin-left: unset;
                         }
 
-
-
+                        .filterOpen {
+                            display: block;
+                        }
 
                         .listingPage-section {
-                            margin: 15px 57px 0px 57px;
+                            width: unset;
+                            margin: unset;
+                            margin-top: 15px;
 
                             .listing-container {
 
-                                .filterBtn-section {
-                                    display: inline-block;
-                                }
+
 
 
                                 .product-listing {
@@ -1160,23 +1196,33 @@ body {
                         }
                     }
 
+                    .filterBtn-section {
+                        margin: 15px 20px 0px 20px;
 
-
-
+                    }
 
                     .filter-listing-section {
+                        margin: unset;
+                        position: relative;
+
+                        .filter-section {
+                            .filter-container {
+                                margin-top: 10px;
+
+                            }
+                        }
 
                         .listingPage-section {
                             margin: 15px 20px 0px 20px;
-                            position: relative;
+                            // position: relative;
 
                             .listing-container {
 
                                 .header-listing {
                                     .listGrid-buttons {
                                         position: absolute;
-                                        top: 17px;
-                                        right: 0px;
+                                        top: -27px;
+                                        right: 25px;
 
                                         .list {
                                             height: 24px;
@@ -1294,8 +1340,18 @@ body {
                                                         padding-top: 10px;
                                                         align-items: start;
 
+
+
                                                         .rate {
                                                             padding-top: 10px;
+
+                                                            p {
+                                                                font-size: 11px;
+                                                            }
+
+                                                            span {
+                                                                font-size: 16px;
+                                                            }
 
                                                             .viewBtn {
                                                                 display: none;
