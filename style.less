@@ -311,11 +311,7 @@ body {
                         margin: 15px 133px 0px 40px;
                         width: 100%;
 
-
-
                         .listing-container {
-
-
                             .filterBtn-section {
                                 display: none;
                                 border-radius: 25px;
@@ -394,19 +390,26 @@ body {
 
                                 .listGrid-buttons {
                                     display: flex;
-                                    align-items: center;
+                                    // align-items: center;
                                     column-gap: 20px;
 
-                                    .list:hover {
+                                    // .grid {
+                                    //     color: #740000;
+                                    // }
+
+                                    .grid:hover {
                                         span {
                                             color: #740000;
                                         }
                                     }
 
-                                    .grid {
-                                        span {
-                                            color: #740000;
-                                        }
+                                    .list {
+                                        color: #740000;
+                                    }
+
+                                    .list {
+                                        height: 24px;
+
                                     }
 
 
@@ -453,8 +456,9 @@ body {
                                 color: black;
                             }
 
-                            .product-listing-grids {
-                                display: none;
+                            .product-listing {
+                                display: block;
+
 
                                 .product-section {
 
@@ -615,23 +619,45 @@ body {
 
                                     }
                                 }
+
+                                .last {
+                                    border-bottom: 1px solid black;
+                                }
+    
                             }
 
-                            .grid {
+                           
+
+                            .grid-products {
+
                                 display: grid;
                                 grid-template-columns: 1fr 1fr 1fr;
                                 gap: 15px;
-                                // display: block;
+                                display: none;
+                                border-bottom: 1px solid black;
+
+
+
 
                                 .product-section {
                                     width: 100%;
                                     max-width: 250px;
+                                    position: relative;
+
+                                    .new {
+                                        position: absolute;
+
+                                    }
 
                                     .productInfo-container {
                                         padding: 20px 0px 15px 0px;
                                         height: 100%;
+                                        width: 100%;
+                                        background-color: #FFFFFF;
+                                        box-shadow: 0px 3px 10px #00000008;
 
                                         .product-flex {
+                                            display: flex;
                                             flex-direction: column;
                                             position: relative;
 
@@ -646,19 +672,27 @@ body {
                                             }
 
                                             .productDetails {
+                                                width: 100%;
+                                                padding: 0px 20px 0px 20px;
 
                                                 .top-content {
                                                     .inner-contents {
+                                                        display: flex;
+                                                        justify-content: space-between;
 
                                                         h3 {
                                                             height: 100%;
                                                             height: 60px;
+                                                            font: 600 16px/20px @opeSans;
+
                                                         }
 
                                                         .heart {
                                                             position: absolute;
                                                             top: -10px;
                                                             right: 10px;
+                                                            color: #740000;
+
                                                         }
                                                     }
 
@@ -668,6 +702,7 @@ body {
                                                 }
 
                                                 .pricingDetails {
+                                                    display: flex;
                                                     flex-direction: column;
                                                     align-items: start;
                                                     justify-content: unset;
@@ -677,10 +712,53 @@ body {
 
                                                     .quantity {
                                                         padding-bottom: 15px;
+
+                                                        .wineQnty {
+                                                            display: flex;
+                                                            width: 60px;
+                                                            border: 1px solid #707070;
+
+
+                                                            .totalQnty {
+                                                                font: 400 12px/16px @oswald;
+                                                                background-color: #707070;
+                                                                width: 100%;
+                                                                max-width: 30px;
+                                                                height: 24px;
+                                                                text-align: center;
+                                                                color: white;
+                                                                padding: 5px;
+                                                            }
+
+                                                            .qnty {
+                                                                font: 400 12px/16px @oswald;
+                                                                width: 100%;
+                                                                max-width: 30px;
+                                                                height: 24px;
+                                                                text-align: center;
+                                                                color: #707070;
+                                                                padding: 5px;
+                                                            }
+                                                        }
+
                                                     }
 
                                                     .rate {
-                                                        p {}
+                                                        display: flex;
+                                                        align-items: center;
+
+                                                        p {
+                                                            font: 600 12px/16px @opeSans;
+                                                            color: @primary-color;
+                                                        }
+
+
+                                                        span {
+                                                            font: bold 20px/16px @pt;
+                                                            color: @price-color;
+                                                            padding-left: 5px;
+
+                                                        }
 
                                                         .viewBtn {
                                                             display: none;
@@ -695,14 +773,17 @@ body {
                                     }
 
                                 }
+
+                            
+                            }
+                            .gap{
+                                padding-bottom: 30px;
                             }
 
 
 
 
-                            .last {
-                                border-bottom: 1px solid black;
-                            }
+
 
 
                         }
@@ -909,7 +990,7 @@ body {
                             .listing-container {
 
 
-                                .product-listing-grids {
+                                .product-listing {
                                     .product-section {
                                         .productInfo-container {
                                             height: auto;
@@ -1012,7 +1093,7 @@ body {
                                 }
 
 
-                                .product-listing-grids {
+                                .product-listing {
 
                                     .product-section {
                                         .productInfo-container {
@@ -1096,6 +1177,10 @@ body {
                                         position: absolute;
                                         top: 17px;
                                         right: 0px;
+
+                                        .list {
+                                            height: 24px;
+                                        }
                                     }
 
                                     .showLists {
@@ -1107,7 +1192,7 @@ body {
                                 }
 
 
-                                .product-listing-grids {
+                                .product-listing {
                                     .product-section {
                                         .productInfo-container {
                                             padding: 40px 0px 20px 15px;
@@ -1163,8 +1248,64 @@ body {
                                         }
                                     }
                                 }
-                                .grid{
+
+                                .grid-products {
                                     grid-template-columns: 1fr 1fr;
+
+                                    .product-section {
+                                        .productInfo-container {
+                                            padding: 40px 0px 20px 15px;
+
+                                            .product-flex {
+                                                .productDetails {
+                                                    padding: unset;
+
+                                                    .top-content {
+                                                        .inner-contents {
+                                                            h3 {
+                                                                font-size: 14px;
+                                                                line-height: 16px;
+                                                                width: 100%;
+                                                                padding-right: 20px;
+
+                                                            }
+
+                                                            .heart {
+                                                                position: absolute;
+                                                                top: 10px;
+                                                                right: 10px;
+
+                                                            }
+                                                        }
+
+                                                        p {
+                                                            font-size: 11px;
+                                                            line-height: 13px;
+                                                            width: 100%;
+                                                            padding-right: 20px;
+
+
+
+                                                        }
+                                                    }
+
+                                                    .pricingDetails {
+                                                        flex-direction: column;
+                                                        padding-top: 10px;
+                                                        align-items: start;
+
+                                                        .rate {
+                                                            padding-top: 10px;
+
+                                                            .viewBtn {
+                                                                display: none;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
 
                             }

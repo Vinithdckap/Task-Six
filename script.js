@@ -13,11 +13,23 @@ for (let i = 0; i < filterCategory.length; i++) {
 
 
 let listIcon = document.querySelector(".list");
-let list = document.querySelector(".product-listing-grids");
+let list = document.querySelector(".product-listing");
 let gridIcon = document.querySelector(".grid");
-let grid = document.querySelector(".grid");
+let grid = document.querySelector(".grid-products");
 
 listIcon.addEventListener("click",()=>{
     list.style.display ="block";
     grid.style.display="none";
+    gridIcon.style.color="black";
+    listIcon.style.color="#740000";
+    
+})
+
+gridIcon.addEventListener("click",()=>{
+    grid.style.display ="grid";
+    list.style.display="none";
+    gridIcon.style.color="#740000";
+    listIcon.style.color="black";
+
+
 })
