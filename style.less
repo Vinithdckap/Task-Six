@@ -80,11 +80,15 @@ body {
                             width: 100%;
                             height: auto;
                         }
+
+                        .mobile-header {
+                            display: none;
+                        }
                     }
 
 
                     // banner
-                    .banner-container {
+                    .banner-section {
                         background-image: url(Images/Banner.png);
                         background-repeat: no-repeat;
                         background-size: cover;
@@ -92,32 +96,39 @@ body {
                         width: 100%;
                         // height: 150px;
 
-                        .breadcrumbs-div {
+                        .banner-container {
+                            max-width: 1366px;
+                            margin: 0 auto;
 
-                            .breadCrumbs {
-                                font: 600 12px/17px @opeSans;
-                                color: #FFFFFF;
-                                padding: 20px 0px 0px 28px;
-                            }
-                        }
+                            .breadcrumbs-div {
 
-                        .shop-flex {
-                            .shop-head {
-                                .shopTitle {
-                                    font: 400 40px/53px @pt;
-                                    color: white;
-                                    text-align: center;
+                                .breadCrumbs {
+                                    font: 600 12px/17px @opeSans;
+                                    color: #FFFFFF;
+                                    padding: 20px 0px 0px 28px;
                                 }
                             }
 
-                            .countWines {
-                                font: 600 16px/22px @opeSans;
-                                color: white;
-                                text-align: center;
-                                padding-top: 8px;
-                                padding-bottom: 20px;
+                            .shop-flex {
+                                .shop-head {
+                                    .shopTitle {
+                                        font: 400 40px/53px @pt;
+                                        color: white;
+                                        text-align: center;
+                                    }
+                                }
+
+                                .countWines {
+                                    font: 600 16px/22px @opeSans;
+                                    color: white;
+                                    text-align: center;
+                                    padding-top: 8px;
+                                    padding-bottom: 20px;
+                                }
                             }
                         }
+
+
                     }
                 }
 
@@ -330,6 +341,10 @@ body {
 
                             }
                         }
+                        .filterBottom{
+                            width: 100%;
+                            height: 50px;
+                        }
                     }
 
                     // listing page details styles
@@ -410,10 +425,10 @@ body {
                                         span {
                                             color: #740000;
                                             font-variation-settings:
-                                            'FILL' 1,
-                                            'wght' 400,
-                                            'GRAD' 0,
-                                            'opsz' 24
+                                                'FILL' 1,
+                                                'wght' 400,
+                                                'GRAD' 0,
+                                                'opsz' 24
                                         }
 
                                     }
@@ -963,6 +978,10 @@ body {
                         .footerImg {
                             width: 100%;
                         }
+                        .mob-footer{
+                            display: none;
+                        }
+
                     }
                 }
 
@@ -1085,21 +1104,24 @@ body {
 
                     .header-section {
 
-                        .banner-container {
-                            .shop-flex {
-                                .shop-head {
-                                    .shopTitle {
-                                        font-size: 32px;
-                                        line-height: 42px;
+                        .banner-section {
+                            .banner-container {
+                                .shop-flex {
+                                    .shop-head {
+                                        .shopTitle {
+                                            font-size: 32px;
+                                            line-height: 42px;
+                                        }
                                     }
-                                }
 
-                                .countWines {
-                                    font-size: 16px;
-                                    line-height: 22px;
-                                }
+                                    .countWines {
+                                        font-size: 16px;
+                                        line-height: 22px;
+                                    }
 
+                                }
                             }
+
                         }
                     }
 
@@ -1203,6 +1225,18 @@ body {
         .main-section {
             .main-container {
                 .inner-container {
+
+                    .header-section {
+                        .header-container {
+                            .header-img {
+                                display: none;
+                            }
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
 
                     .site-description-section {
                         h4 {
@@ -1432,6 +1466,20 @@ body {
                         }
                     }
 
+
+                    .footer-section {
+                        .footer-container {
+                            .footerImg {
+                                display: none;
+                            }
+
+                            .mob-footer{
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
                 }
 
             }

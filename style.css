@@ -50,24 +50,31 @@ body .main-section .main-container .inner-container .header-section .header-cont
   width: 100%;
   height: auto;
 }
-body .main-section .main-container .inner-container .header-section .banner-container {
+body .main-section .main-container .inner-container .header-section .header-container .mobile-header {
+  display: none;
+}
+body .main-section .main-container .inner-container .header-section .banner-section {
   background-image: url(Images/Banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
 }
-body .main-section .main-container .inner-container .header-section .banner-container .breadcrumbs-div .breadCrumbs {
+body .main-section .main-container .inner-container .header-section .banner-section .banner-container {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+body .main-section .main-container .inner-container .header-section .banner-section .banner-container .breadcrumbs-div .breadCrumbs {
   font: 600 12px/17px 'Open Sans';
   color: #FFFFFF;
   padding: 20px 0px 0px 28px;
 }
-body .main-section .main-container .inner-container .header-section .banner-container .shop-flex .shop-head .shopTitle {
+body .main-section .main-container .inner-container .header-section .banner-section .banner-container .shop-flex .shop-head .shopTitle {
   font: 400 40px/53px 'PT Serif';
   color: white;
   text-align: center;
 }
-body .main-section .main-container .inner-container .header-section .banner-container .shop-flex .countWines {
+body .main-section .main-container .inner-container .header-section .banner-section .banner-container .shop-flex .countWines {
   font: 600 16px/22px 'Open Sans';
   color: white;
   text-align: center;
@@ -210,6 +217,10 @@ body .main-section .main-container .inner-container .filter-listing-section .fil
 }
 body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container .filter-contents > :last-child {
   border-radius: 0px 0px 8px 8px;
+}
+body .main-section .main-container .inner-container .filter-listing-section .filter-section .filterBottom {
+  width: 100%;
+  height: 50px;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section {
   margin: 15px 133px 0px 40px;
@@ -621,6 +632,9 @@ body .main-section .main-container .inner-container .contact-banner .contact-det
 body .main-section .main-container .inner-container .footer-section .footer-container .footerImg {
   width: 100%;
 }
+body .main-section .main-container .inner-container .footer-section .footer-container .mob-footer {
+  display: none;
+}
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
   body .main-section .main-container .inner-container .site-description-section h4 {
     padding: 25px 92px;
@@ -655,11 +669,11 @@ body .main-section .main-container .inner-container .footer-section .footer-cont
   }
 }
 @media screen and (max-width: 1023px) {
-  body .main-section .main-container .inner-container .header-section .banner-container .shop-flex .shop-head .shopTitle {
+  body .main-section .main-container .inner-container .header-section .banner-section .banner-container .shop-flex .shop-head .shopTitle {
     font-size: 32px;
     line-height: 42px;
   }
-  body .main-section .main-container .inner-container .header-section .banner-container .shop-flex .countWines {
+  body .main-section .main-container .inner-container .header-section .banner-section .banner-container .shop-flex .countWines {
     font-size: 16px;
     line-height: 22px;
   }
@@ -705,6 +719,12 @@ body .main-section .main-container .inner-container .footer-section .footer-cont
   }
 }
 @media screen and (max-width: 767px) {
+  body .main-section .main-container .inner-container .header-section .header-container .header-img {
+    display: none;
+  }
+  body .main-section .main-container .inner-container .header-section .header-container img {
+    width: 100%;
+  }
   body .main-section .main-container .inner-container .site-description-section h4 {
     display: none;
   }
@@ -837,5 +857,13 @@ body .main-section .main-container .inner-container .footer-section .footer-cont
     line-height: 14px;
     width: 180px;
     padding: 8px 13px;
+  }
+  body .main-section .main-container .inner-container .footer-section .footer-container .footerImg {
+    display: none;
+  }
+  body .main-section .main-container .inner-container .footer-section .footer-container .mob-footer {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 }
