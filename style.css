@@ -93,6 +93,11 @@ body .main-section .main-container .inner-container .site-description-section h4
 body .main-section .main-container .inner-container .site-description-section h4 a {
   color: black;
 }
+body .main-section .main-container .inner-container .site-description-section .moreText {
+  font: 600 14px/20px 'Open Sans';
+  color: #707070;
+  display: none;
+}
 body .main-section .main-container .inner-container .filterBtn-section {
   display: none;
   border-radius: 25px;
@@ -364,6 +369,9 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-listing .product-section .productInfo-container .product-flex .productDetails .top-content p a {
   color: black;
+}
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-listing .product-section .productInfo-container .product-flex .productDetails .top-content .learnText {
+  display: none;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-listing .product-section .productInfo-container .product-flex .productDetails .pricingDetails {
   display: flex;

@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sokolin</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" /> -->
-    <!-- <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
 </head>
+
 
 <body>
 
@@ -48,8 +47,13 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla orci, ullamcorper sit amet
                         euismod vel, condimentum sed urna. Duis ultricies nulla ac augue posuere, et lobortis quam
                         gravida. Aliquam sit amet ipsum cursus, suscipit ipsum eu, scelerisque sem. Phasellus malesuada
-                        euismod vehicula. Vivamus… <a href="#"> > Read More</a>
+                        euismod vehicula. Vivamus..<span class="moreText"> Aliquam sit amet ipsum cursus, suscipit ipsum
+                            eu, scelerisque sem.
+                            Phasellus malesuada
+                            euismod vehicula.....</span><a class="readMore" href="#">Read More</a>
                     </h4>
+
+
                 </div>
 
                 <!-- filter and listing page details section -->
@@ -57,7 +61,7 @@
                 <div class="filterBtn-section">
                     <div class="filterBtn-container">
                         <h2 class="show-filter">SHOW FILTERS</h2>
-                        <span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined addIcon">
                             add
                         </span>
                     </div>
@@ -103,11 +107,11 @@
                                         <p>$30</p>
                                     </div>
                                     <div class="startingPrice">
-                                        <p>$400</p>
+                                        <p>$100</p>
                                     </div>
                                 </div>
                                 <form action="">
-                                    <input type="range" id="vol" name="vol" min="0" max="50">
+                                    <input type="range" id="vol" name="vol" min="30" max="100">
                                 </form>
                             </div>
 
@@ -119,7 +123,7 @@
                                 <div class="filter-category">
                                     <div class="filter-option">
                                         <div class="type-filter">
-                                            <h4>Type</h4>
+                                            <h4 cls>Type</h4>
                                         </div>
                                         <div class="dropDown-div">
                                             <span class="material-symbols-outlined expand">
@@ -328,8 +332,18 @@
                                                         with a
                                                         mid-slope position. The fruit is destemmed and fermented on
                                                         native
-                                                        yeasts, prior to ageing in cask (25% new…” ><a href="">Learn
-                                                            More</a>
+                                                        yeasts, prior to ageing in cask (25% new…” <span
+                                                            class="learnText">just over 1ha
+                                                            in Beaune Premier Cru Cent Vignes,
+                                                            with a
+                                                            mid-slope position Curabitur tempor dictum laoreet.
+                                                            Pellentesque ligula tellus, eleifend molestie erat eu,
+                                                            consequat vestibulum risus. Aliquam accumsan bibendum
+                                                            feugiat. Aliquam facilisis placerat placerat. Phasellus
+                                                            sagittis sagittis quam, eu ultricies eros scelerisque vitae.
+                                                            Proin nec neque odio. Ut scelerisque mi est, eu sodales
+                                                            massa convallis qui )</span> <a class="learnMore"
+                                                            href="#">Learn More</a>
                                                     </p>
                                                 </div>
 
@@ -370,7 +384,17 @@
                                                     </div>
                                                     <p>The 2016 Cabernet Sauvignon Samantha’s is made of 100% Cabernet
                                                         Sauvignon aged for 21 months in 86% new French oak. This is a
-                                                        vineyard selection blend usually harvested slightly la…”<a
+                                                        vineyard selection blend usually harvested slightly la… <span
+                                                            class="learnText">just over 1ha
+                                                            in Beaune Premier Cru Cent Vignes,
+                                                            with a
+                                                            mid-slope position Curabitur tempor dictum laoreet.
+                                                            Pellentesque ligula tellus, eleifend molestie erat eu,
+                                                            consequat vestibulum risus. Aliquam accumsan bibendum
+                                                            feugiat. Aliquam facilisis placerat placerat. Phasellus
+                                                            sagittis sagittis quam, eu ultricies eros scelerisque vitae.
+                                                            Proin nec neque odio. Ut scelerisque mi est, eu sodales
+                                                            massa convallis qui )</span>”<a class="learnMore"
                                                             href="">Learn More</a>
                                                     </p>
                                                 </div>
@@ -414,7 +438,17 @@
                                                     <p>The 2018 Chateau Sergant is made of Lorem ipsum dolor sit amet,
                                                         consectetur adipiscing elit. Fusce efficitur libero vel metus
                                                         volutpat tristique at vel massa. Morbi nec urna velit.
-                                                        Vivamus.…” <a href="">Learn
+                                                        Vivamus.… <span class="learnText">just over 1ha
+                                                            in Beaune Premier Cru Cent Vignes,
+                                                            with a
+                                                            mid-slope position Curabitur tempor dictum laoreet.
+                                                            Pellentesque ligula tellus, eleifend molestie erat eu,
+                                                            consequat vestibulum risus. Aliquam accumsan bibendum
+                                                            feugiat. Aliquam facilisis placerat placerat. Phasellus
+                                                            sagittis sagittis quam, eu ultricies eros scelerisque vitae.
+                                                            Proin nec neque odio. Ut scelerisque mi est, eu sodales
+                                                            massa convallis qui )</span>” <a class="learnMore"
+                                                            href="">Learn
                                                             More</a>
                                                     </p>
                                                 </div>
@@ -460,7 +494,18 @@
                                                         grapes
                                                         dehydrated under the sun at the time of the Second World War,
                                                         was
-                                                        only bottled in September 2011. This is an e…”<a href="">Learn
+                                                        only bottled in September 2011. This is an e… <span
+                                                            class="learnText">just over 1ha
+                                                            in Beaune Premier Cru Cent Vignes,
+                                                            with a
+                                                            mid-slope position Curabitur tempor dictum laoreet.
+                                                            Pellentesque ligula tellus, eleifend molestie erat eu,
+                                                            consequat vestibulum risus. Aliquam accumsan bibendum
+                                                            feugiat. Aliquam facilisis placerat placerat. Phasellus
+                                                            sagittis sagittis quam, eu ultricies eros scelerisque vitae.
+                                                            Proin nec neque odio. Ut scelerisque mi est, eu sodales
+                                                            massa convallis qui </span><a class="learnMore"
+                                                            href="">Learn
                                                             More</a>
                                                     </p>
                                                 </div>
@@ -503,7 +548,18 @@
                                                     </div>
                                                     <p>(Nuits St. Georges “Murgers”- Domaine Hudelot-Noëllat) Though the
                                                         2018 Murgers here is 13.8 percent octane, it is a very pure and
-                                                        plummy wine and is not particular…”<a href="">Learn
+                                                        plummy wine and is not particular… <span class="learnText">just
+                                                            over 1ha
+                                                            in Beaune Premier Cru Cent Vignes,
+                                                            with a
+                                                            mid-slope position Curabitur tempor dictum laoreet.
+                                                            Pellentesque ligula tellus, eleifend molestie erat eu,
+                                                            consequat vestibulum risus. Aliquam accumsan bibendum
+                                                            feugiat. Aliquam facilisis placerat placerat. Phasellus
+                                                            sagittis sagittis quam, eu ultricies eros scelerisque vitae.
+                                                            Proin nec neque odio. Ut scelerisque mi est, eu sodales
+                                                            massa convallis qui )</span><a class="learnMore"
+                                                            href="">Learn
                                                             More</a>
                                                     </p>
                                                 </div>
@@ -549,7 +605,18 @@
                                                         last
                                                         vintage made by the descendants of the Woltner family, who had
                                                         owned
-                                                        this estate for decades prior to selling it…” <a href="">Learn
+                                                        this estate for decades prior to selling it… <span
+                                                            class="learnText">just over 1ha
+                                                            in Beaune Premier Cru Cent Vignes,
+                                                            with a
+                                                            mid-slope position Curabitur tempor dictum laoreet.
+                                                            Pellentesque ligula tellus, eleifend molestie erat eu,
+                                                            consequat vestibulum risus. Aliquam accumsan bibendum
+                                                            feugiat. Aliquam facilisis placerat placerat. Phasellus
+                                                            sagittis sagittis quam, eu ultricies eros scelerisque vitae.
+                                                            Proin nec neque odio. Ut scelerisque mi est, eu sodales
+                                                            massa convallis qui )</span> <a class="learnMore"
+                                                            href="">Learn
                                                             More</a>
                                                     </p>
                                                 </div>
@@ -595,7 +662,18 @@
                                                         aromas
                                                         of green apple, crisp apricot, mandarin, fresh pastry and
                                                         iodine.
-                                                        Full-bodied, satiny and layered, it’s …” ><a href="">Learn
+                                                        Full-bodied, satiny and layered, it’s … <span
+                                                            class="learnText">just over 1ha
+                                                            in Beaune Premier Cru Cent Vignes,
+                                                            with a
+                                                            mid-slope position Curabitur tempor dictum laoreet.
+                                                            Pellentesque ligula tellus, eleifend molestie erat eu,
+                                                            consequat vestibulum risus. Aliquam accumsan bibendum
+                                                            feugiat. Aliquam facilisis placerat placerat. Phasellus
+                                                            sagittis sagittis quam, eu ultricies eros scelerisque vitae.
+                                                            Proin nec neque odio. Ut scelerisque mi est, eu sodales
+                                                            massa convallis qui )</span> <a class="learnMore"
+                                                            href="">Learn
                                                             More</a>
                                                     </p>
                                                 </div>
@@ -640,7 +718,17 @@
                                                         luck on
                                                         a couple of occasions (cooked examples) with the 1961
                                                         Calon-Ségur, I
-                                                        was delighted to be s…” ><a href="">Learn
+                                                        was delighted to be s…” <span class="learnText">just over 1ha
+                                                            in Beaune Premier Cru Cent Vignes,
+                                                            with a
+                                                            mid-slope position Curabitur tempor dictum laoreet.
+                                                            Pellentesque ligula tellus, eleifend molestie erat eu,
+                                                            consequat vestibulum risus. Aliquam accumsan bibendum
+                                                            feugiat. Aliquam facilisis placerat placerat. Phasellus
+                                                            sagittis sagittis quam, eu ultricies eros scelerisque vitae.
+                                                            Proin nec neque odio. Ut scelerisque mi est, eu sodales
+                                                            massa convallis qui )</span> <a class="learnMore"
+                                                            href="">Learn
                                                             More</a>
                                                     </p>
                                                 </div>
@@ -689,7 +777,7 @@
                                                         with a
                                                         mid-slope position. The fruit is destemmed and fermented on
                                                         native
-                                                        yeasts, prior to ageing in cask (25% new…” ><a href="">Learn
+                                                        yeasts, prior to ageing in cask (25% new…”<a href="">Learn
                                                             More</a>
                                                     </p>
                                                 </div>
@@ -954,7 +1042,7 @@
                                                         aromas
                                                         of green apple, crisp apricot, mandarin, fresh pastry and
                                                         iodine.
-                                                        Full-bodied, satiny and layered, it’s …” ><a href="">Learn
+                                                        Full-bodied, satiny and layered, it’s …”<a href="">Learn
                                                             More</a>
                                                     </p>
                                                 </div>
@@ -999,7 +1087,7 @@
                                                         luck on
                                                         a couple of occasions (cooked examples) with the 1961
                                                         Calon-Ségur, I
-                                                        was delighted to be s…” ><a href="">Learn
+                                                        was delighted to be s…” <a href="">Learn
                                                             More</a>
                                                     </p>
                                                 </div>
