@@ -43,7 +43,7 @@ for (let i = 0; i < filterCategory.length; i++) {
 $(document).ready(function () {
     $('.grid').click(function () {
         $('.grid-products').css('display', 'grid');
-        $('.product-listing').hide();
+        $('.product-listing').hide(1000);
         $('.grid').css('color', '#740000')
         $('.list').css('color', '#BABABA')
     })
@@ -53,8 +53,8 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.list').click(function () {
-        $('.grid-products').hide();
-        $('.product-listing').show();
+        $('.grid-products').hide(1000);
+        $('.product-listing').show(1000);
         $('.list').css('color', '#740000');
         $('.grid').css('color', '#BABABA')
 
