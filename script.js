@@ -1,45 +1,39 @@
-let filterCategory = document.querySelectorAll(".filter-category");
-let openType = document.querySelector(".type");
-let typeTitle = document.querySelector(".typeTitle");
-let expand = document.querySelector(".expand");
 
 
 
-for (let i = 0; i < filterCategory.length; i++) {
-    // console.log(filterCategory[i])
-    filterCategory[i].addEventListener("click", () => {
-        openType.classList.toggle("open");
-        // filterCategory[i].style.background="white";
-        // typeTitle.style.color="#740000";
-        // expand.style.color="#740000"
-    })
-
-}
+// hide and show filter btns in tablet and mobile view accordion
 
 
+$('.filterBtn-section').click(function () {
+    $('.filter-section').toggle(1200);
 
-// // list grid open functions
-// let listIcon = document.querySelector(".list");
-// let list = document.querySelector(".product-listing");
-// let gridIcon = document.querySelector(".grid");
-// let grid = document.querySelector(".grid-products");
+    if ($('.show-filter').text() == "SHOW FILTERS") {
+        $('.show-filter').text("HIDE FILTER");
+        $('.addIcon').text("remove");
+    }
+    else {
+        $('.show-filter').text("SHOW FILTERS");
+        $('.addIcon').text("add")
+    }
 
-// listIcon.addEventListener("click", () => {
-//     list.style.display = "block";
-//     grid.style.display = "none";
-//     gridIcon.style.color = "#BABABA";
-//     listIcon.style.color = "#740000";
-// })
-
-// gridIcon.addEventListener("click", () => {
-//     grid.style.display = "grid";
-//     list.style.display = "none";
-//     gridIcon.style.color = "#740000";
-//     listIcon.style.color = "#BABABA";
-// })
+})
 
 
 
+// filter option accordion
+$(document).ready(function () {
+    $('.filter-option').click(function () {
+        $(this).next('.type').toggle(500)
+        $('.type').not($(this).next('.type')).slideUp();
+    });
+});
+
+
+
+
+
+
+// list grid view tab functions
 $(document).ready(function () {
     $('.grid').click(function () {
         $('.grid-products').css('display', 'grid');
@@ -49,8 +43,7 @@ $(document).ready(function () {
     })
 });
 
-
-
+// list page
 $(document).ready(function () {
     $('.list').click(function () {
         $('.grid-products').hide(1000);
@@ -60,6 +53,8 @@ $(document).ready(function () {
 
     })
 })
+
+
 
 // read more less functions
 $('.readMore').click(function () {
@@ -108,44 +103,3 @@ $('.learnMore').click(function () {
 
 
 
-
-
-// filter btn open
-// let filterBtn = document.querySelector(".filterBtn-section");
-// let filterContents = document.querySelector(".filter-section");
-
-
-// filterBtn.addEventListener("click", () => {
-//     filterContents.classList.toggle("filterOpen")
-
-
-
-//     // add filter name and icon changing
-//     let textContent = document.querySelector('.show-filter');
-//     let addIcon = document.querySelector('.material-symbols-outlined');
-
-//     if (textContent.innerText == "SHOW FILTERS") {
-//         textContent.innerText = "HIDE FILTER";
-//         addIcon.innerText = "remove";
-//     }
-//     else {
-//         textContent.innerText = "SHOW FILTERS";
-//         addIcon.innerText = "add";
-//     }
-// })
-
-
-
-$('.filterBtn-section').click(function () {
-    $('.filter-section').toggle(1200);
-
-    if ($('.show-filter').text() == "SHOW FILTERS") {
-        $('.show-filter').text("HIDE FILTER");
-        $('.addIcon').text("remove");
-    }
-    else {
-        $('.show-filter').text("SHOW FILTERS");
-        $('.addIcon').text("add")
-    }
-
-})
