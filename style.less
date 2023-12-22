@@ -332,9 +332,8 @@ body {
                                         }
                                     }
 
-                                    .type.open {
-                                        display: block;
-                                    }
+                                    .type:hover {
+                                        color: #740000;                                    }
                                 }
                             }
 
@@ -557,7 +556,15 @@ body {
                                                                 'GRAD' 0,
                                                                 'opsz' 24
                                                         }
-
+                                                  
+                                                        .filled {
+                                                          font-variation-settings:
+                                                          'FILL' 1,
+                                                          'wght' 400,
+                                                          'GRAD' 0,
+                                                          'opsz' 24
+                                                        }
+                                                    
                                                     }
 
                                                     p {
@@ -568,6 +575,8 @@ body {
 
                                                         & a {
                                                             color: black;
+                                                            cursor: pointer;
+                                                            text-decoration: underline;
                                                         }
 
                                                     }

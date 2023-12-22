@@ -214,8 +214,8 @@ body .main-section .main-container .inner-container .filter-listing-section .fil
   font: 400 14px/32px 'Open Sans';
   list-style: none;
 }
-body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container .filter-contents .filter-category .type.open {
-  display: block;
+body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container .filter-contents .filter-category .type:hover {
+  color: #740000;
 }
 body .main-section .main-container .inner-container .filter-listing-section .filter-section .filter-container .filter-contents > :nth-child(2) {
   border-radius: 8px 8px 0px 0px;
@@ -361,6 +361,9 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
   color: #740000;
   font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
+body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-listing .product-section .productInfo-container .product-flex .productDetails .top-content .inner-contents .filled {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-listing .product-section .productInfo-container .product-flex .productDetails .top-content p {
   font: 600 12px/16px 'Open Sans';
   color: #707070;
@@ -369,6 +372,8 @@ body .main-section .main-container .inner-container .filter-listing-section .lis
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-listing .product-section .productInfo-container .product-flex .productDetails .top-content p a {
   color: black;
+  cursor: pointer;
+  text-decoration: underline;
 }
 body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-listing .product-section .productInfo-container .product-flex .productDetails .top-content .learnText {
   display: none;
