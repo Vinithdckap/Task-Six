@@ -1,11 +1,11 @@
-
+``
 
 
 // hide and show filter btns in tablet and mobile view accordion
 
 
 $('.filterBtn-section').click(function () {
-    $('.filter-section').toggle(1200);
+    $('.filter-section').toggle();
 
     if ($('.show-filter').text() == "SHOW FILTERS") {
         $('.show-filter').text("HIDE FILTER");
@@ -23,7 +23,7 @@ $('.filterBtn-section').click(function () {
 // filter option accordion
 $(document).ready(function () {
     $('.filter-option').click(function () {
-        $(this).next('.type').toggle(500)
+        $(this).next('.type').toggle()
         $('.type').not($(this).next('.type')).slideUp();
     });
 });
@@ -37,7 +37,7 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('.grid').click(function () {
         $('.grid-products').css('display', 'grid');
-        $('.product-listing').hide(1000);
+        $('.product-listing').hide();
         $('.grid').css('color', '#740000')
         $('.list').css('color', '#BABABA')
     })
@@ -46,8 +46,8 @@ $(document).ready(function () {
 // list page
 $(document).ready(function () {
     $('.list').click(function () {
-        $('.grid-products').hide(1000);
-        $('.product-listing').show(1000);
+        $('.grid-products').hide();
+        $('.product-listing').show();
         $('.list').css('color', '#740000');
         $('.grid').css('color', '#BABABA')
 
@@ -57,7 +57,7 @@ $(document).ready(function () {
 
 // like btn fill
 
-$('.heart').each(function(){
+$('.heart').each(function () {
     $(this).click(function () {
         $(this).toggleClass('filled')
     })
@@ -67,7 +67,7 @@ $('.heart').each(function(){
 
 // read more less functions
 $('.readMore').click(function () {
-    $('.moreText').toggle(800);
+    $('.moreText').toggle();
     if ($('.readMore').text() == "Read More") {
         $(this).text("Read less");
     } else {
@@ -78,35 +78,71 @@ $('.readMore').click(function () {
 
 // learnmore functions
 
-$(document).ready(function() {
-    $('.learnMore').click(function(e) {
-      e.stopPropagation(); // Stop the event from propagating further
-  
-      let $prevElement = $(this).prev('.learnText');
-  
-      if ($(this).text() === "Learn More") {
-        $('.learnText').not($prevElement).slideUp(); // Close other elements
-        $prevElement.slideToggle(1000); // Toggle the visibility
-        $(this).text("Learn Less");
-      } else {
-        $prevElement.slideUp(); // Hide the previous element
-        $(this).text("Learn More");
-      }
-    });
-  
-    // // Clicking anywhere on the document will close all elements
-    $(document).click(function() {
-      $('.learnText').slideUp();
-      $('.learnMore').text("Learn More");
-    });
-  
-    // // Prevent clicking on .learnText from triggering the document click handler
-    $('.learnText').click(function(e) {
-      e.stopPropagation();
-    });
-  });
+$(document).ready(function () {
+    $('.learnMore').click(function (e) {
+        e.stopPropagation();
 
-  
+        let $prevElement = $(this).prev('.learnText');
+
+        if ($(this).text() === "Learn More") {
+            $('.learnText').not($prevElement).slideUp();
+            $prevElement.slideToggle();
+            $(this).text("Learn Less");
+
+        } else {
+            $prevElement.slideUp();
+            $(this).text("Learn More");
+        }
+    });
+
+    // // Clicking anywhere on the document will close all elements
+    $(document).click(function () {
+        $('.learnText').slideUp();
+        $('.learnMore').text("Learn More");
+    });
+
+    // // Prevent clicking on .learnText from triggering the document click handler
+    $('.learnText').click(function (e) {
+        e.stopPropagation();
+    });
+});
+
+
+
+
+
+
+
+
+
+// footer collapse function
+
+
+
+
+$(document).ready(function () {
+    $(".first-title").click(function () {
+        let $footerLists = $(this).siblings(".footer-lists");
+        let $addIcon = $(this).children(".add");
+
+        // Toggle visibility of footer lists
+        $footerLists.slideToggle();
+
+        // Toggle add/remove icon
+        if ($addIcon.text().trim() === "add") {
+            $addIcon.text("remove");
+        } else {
+            $addIcon.text("add");
+        }
+
+        // Close other open footer lists
+        $(".footer-lists").not($footerLists).slideUp();
+        $(".add").not($addIcon).text("add");
+    });
+});
+
+
+
 
 
 

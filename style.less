@@ -56,6 +56,14 @@
 @price-color: #740000;
 @btn-color: #0088CC;
 
+@sarala: 'Sarala', sans-serif;
+@teko: 'Teko', sans-serif;
+@titillium: 'Titillium Web', sans-serif;
+@sourceSans: 'Source Sans 3', sans-serif;
+@primary-font-color: black;
+@secondary-color :black;
+@tertiary-color: #FFFFFF;
+
 
 
 body {
@@ -95,6 +103,7 @@ body {
                         background-position: center;
                         width: 100%;
                         // height: 150px;
+
 
                         .banner-container {
                             max-width: 1366px;
@@ -333,7 +342,8 @@ body {
                                     }
 
                                     .type:hover {
-                                        color: #740000;                                    }
+                                        color: #740000;
+                                    }
                                 }
                             }
 
@@ -556,15 +566,15 @@ body {
                                                                 'GRAD' 0,
                                                                 'opsz' 24
                                                         }
-                                                  
+
                                                         .filled {
-                                                          font-variation-settings:
-                                                          'FILL' 1,
-                                                          'wght' 400,
-                                                          'GRAD' 0,
-                                                          'opsz' 24
+                                                            font-variation-settings:
+                                                                'FILL' 1,
+                                                                'wght' 400,
+                                                                'GRAD' 0,
+                                                                'opsz' 24
                                                         }
-                                                    
+
                                                     }
 
                                                     p {
@@ -993,18 +1003,311 @@ body {
                 }
 
 
-                // footer
+                // footer container
 
-                .footer-section {
-                    .footer-container {
-                        .footerImg {
+                .footer-container {
+                    .footer-div {
+                        // .footer-img {
+                        //     width: 100%;
+                        // }
+
+                        // .footer-mobile {
+                        //     display: none;
+                        // }
+                        .footer-top {
+                            background-color: #310703;
+                            height: 31px;
                             width: 100%;
+
+
+                            .hp-veteran-badge {
+                                display: none;
+                            }
+
+                            .footer-title {
+
+                                font: 800 14px/13px @sourceSans;
+                                color: @tertiary-color;
+                                text-align: center;
+                                letter-spacing: 2px;
+                                padding-top: 9px;
+
+                            }
                         }
 
-                        .mob-footer {
-                            display: none;
+
+                        .footer-contents {
+
+                            width: 100%;
+                            margin: 0 auto;
+                            max-width: 1366px;
+
+                            background-color: #2F2F2B;
+                            display: flex;
+                            height: 325px;
+
+
+                            .footer-right {
+                                display: flex;
+                                column-gap: 48px;
+                                padding: 25px 0px 0px 94px;
+
+
+                                .first-row-footer {
+                                    .first-title {
+                                        font: bold 16px/24px @sarala;
+                                        color: #EFF0E8;
+                                    }
+
+                                    .add {
+                                        display: none;
+                                    }
+
+                                    .footer-lists {
+                                        .ulContents {
+                                            padding-top: 10px;
+
+                                            .listContent, a {
+
+                                                font: 400 16px/34px @sarala;
+                                                color: #D0DD94;
+                                                list-style: none;
+                                                cursor: pointer;
+                                                text-decoration: none;
+
+
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .hrFooter {
+
+                                    height: 254px;
+                                    border: 1px solid #474747;
+                                }
+                            }
+
+                            .footer-middle {
+                                padding-top: 31px;
+
+                                padding-right: 50px;
+
+                                .newsLetter-section {
+
+                                    .message-details {
+
+                                        padding-left: 38px;
+
+                                        .news-div {
+                                            display: flex;
+                                            align-items: center;
+                                            column-gap: 10px;
+
+                                            .new-div-title {
+                                                font: bold 33px/16px @sarala;
+                                                color: #FEFEFE;
+                                            }
+
+                                        }
+
+                                        .signUpText {
+                                            font: 400 16px/20px @sarala;
+                                            color: #D2C9B4;
+                                            padding-top: 10px;
+                                            padding-bottom: 10px;
+                                        }
+
+                                        .email-input {
+                                            .emailSearch {
+                                                position: relative;
+
+                                                .email {
+                                                    width: 268px;
+                                                    height: 44px;
+                                                    background-color: #DDDED6;
+                                                    border: none;
+                                                    padding: 11px;
+                                                    font-family: 'Sarala', sans-serif;
+                                                }
+
+                                                .email::placeholder {
+                                                    font: 400 14px/16px @sarala;
+                                                    color: #4A4A4A;
+
+                                                }
+
+                                                .rightArrow {
+                                                    height: 44px;
+                                                    width: 44px;
+                                                    background: #727D49;
+                                                    position: absolute;
+                                                    right: 0px;
+                                                    top: 0;
+                                                    font-size: 40px;
+                                                    color: #FFFFFF;
+                                                    text-align: center;
+
+                                                    .arrow {
+                                                        font-size: 40px;
+                                                    }
+
+                                                }
+
+                                            }
+                                        }
+                                    }
+
+                                }
+
+                                .hrNews {
+                                    margin-top: 24px;
+                                    margin-bottom: 15px;
+                                    border: 1px solid #474747;
+                                    width: 100%;
+                                    margin-left: 23px;
+
+
+                                }
+
+
+                                .brand-section {
+                                    padding-left: 38px;
+
+                                    .brand-div {
+                                        display: flex;
+                                        align-items: center;
+                                        column-gap: 10px;
+
+
+                                        .cardHolder {
+                                            font: bold 17px/20px @sarala;
+                                            color: #EFF0E8;
+                                        }
+
+                                    }
+
+                                    .dealerInfo {
+                                        padding-top: 15px;
+                                    }
+
+                                    .dealerInfo a {
+                                        font: bold 14px/20px @sarala;
+                                        color: #8F95A6;
+                                        letter-spacing: 0.5px;
+                                    }
+                                }
+
+
+                            }
+
+
+                            .footer-left {
+                                background-image: url(./Images/footer-left\ 1.png);
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                background-position: center;
+
+                                .inner-footer-left {
+
+                                    padding: 20px 63px 20px 25px;
+
+                                    .social-media-container {
+                                        color: #FFFFFF;
+                                        display: flex;
+                                        align-items: center;
+                                        column-gap: 15px;
+
+                                        .connectFb {
+                                            font: bold 24px/48px @titillium;
+                                        }
+
+                                        .specialText {
+                                            font: bold 50px/30px @titillium;
+                                        }
+                                    }
+
+                                    .features {
+                                        padding-left: 99px;
+
+                                        .marketing-div {
+                                            .listFeatures {
+
+                                                font: 400 18px/24px @sarala;
+                                                color: #A2A8BA;
+                                            }
+
+                                        }
+                                    }
+
+                                    .footerBtns {
+
+                                        // padding-left: 80px;
+                                        padding-top: 20px;
+                                        position: relative;
+                                        right: 19px;
+
+                                        .followBtns {
+                                            width: 179px;
+                                            height: 44px;
+                                            background: transparent;
+                                            font: bold 18px/24px @sarala;
+                                            color: #FFFFFF;
+                                            border: 2px solid #ffffff;
+
+                                            &:hover {
+                                                background-color: @tertiary-color;
+                                                color: @primary-font-color;
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
                         }
 
+
+                    }
+
+
+
+                    .footer-bottom {
+                        height: 47px;
+                        max-width: 1365px;
+                        margin: 0 auto;
+
+                        .bottom-div {
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                            padding-top: 9px;
+
+
+                            .copyright-div {
+                                display: flex;
+                                align-items: center;
+                                column-gap: 20px;
+
+                                .secure {
+                                    font: bold 13px/16px @sarala;
+                                    color: #6d6e64;
+                                }
+                            }
+
+
+                            .copyright {
+                                font: 400 12px/29px @sarala;
+                                color: #6D6E64;
+
+                                & a {
+                                    color: #6D6E64;
+
+                                }
+                            }
+                        }
                     }
                 }
 
@@ -1106,6 +1409,136 @@ body {
 
                         }
                     }
+
+
+                    .footer-container {
+                        .footer-div {
+
+                            .footer-top {
+                                .hp-veteran-badge {
+                                    display: none;
+                                }
+                            }
+
+                            .footer-contents {
+                                height: 426px;
+
+                                .footer-right {
+                                    padding: 25px 0px 0px 20px;
+                                    column-gap: 25px;
+
+                                    .first-row-footer {
+                                        .first-title {
+                                            font: bold 14px/24px 'Sarala', sans-serif;
+                                        }
+
+                                        .footer-lists {
+                                            .ulContents {
+                                                width: 99px;
+
+                                                .listContent {
+                                                    font: 400 14px/22px 'Sarala', sans-serif;
+                                                    padding-top: 15px;
+
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+
+                                .footer-middle {
+                                    padding-right: 20px;
+
+                                    .newsLetter-section {
+                                        .message-details {
+
+                                            padding-left: 20px;
+
+                                            .message-details {
+                                                .email-input {
+
+
+                                                    .emailSearch {
+                                                        .email {
+                                                            width: 226px;
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                        }
+
+                                    }
+
+                                    .hrNews {
+                                        width: auto;
+                                        margin-left: 20px;
+
+                                    }
+
+                                    .brand-section {
+                                        padding-left: 20px;
+                                    }
+                                }
+
+
+                                .footer-left {
+
+                                    background-image: url(./Images/laptop\ footer\ left.png);
+                                    width: 100%;
+
+                                    .inner-footer-left {
+                                        padding: 20px 18px 20px 18px;
+
+                                        .social-media-container {
+                                            column-gap: 5px;
+
+                                            .connectFb {
+                                                font: bold 20px/48px 'Titillium Web', sans-serif;
+                                            }
+
+                                            .specialText {
+                                                font: bold 46px/30px 'Titillium Web', sans-serif;
+                                            }
+                                        }
+
+                                        .features {
+
+                                            padding-left: 88px;
+
+                                            .marketing-div {
+                                                .listFeatures {
+                                                    font-size: 16px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+
+
+
+
+
+                        }
+
+                        .footer-bottom {
+                            .bottom-div {
+                                justify-content: space-between;
+                                padding-left: 20px;
+
+                                .copyright {
+                                    padding-right: 20px;
+
+                                }
+                            }
+                        }
+
+                    }
+
 
 
 
@@ -1233,6 +1666,66 @@ body {
                             .helpText {
                                 p {
                                     max-width: 385px;
+                                }
+                            }
+                        }
+                    }
+
+
+                    .footer-container {
+                        .footer-div {
+
+                            .footer-top {
+
+                                .hp-veteran-badge {
+                                    display: none;
+                                }
+
+                                .footer-title {
+                                    font: 800 12px/13px 'Source Sans 3', sans-serif;
+                                }
+                            }
+
+                            .footer-contents {
+
+                                height: auto;
+                                flex-direction: column-reverse;
+
+
+
+                                .footer-right {
+                                    padding: 50px 0px 20px 0px;
+                                    justify-content: space-evenly;
+
+                                    .hrFooter {
+                                        display: none;
+                                    }
+
+                                }
+
+                                .footer-middle {
+                                    display: flex;
+                                    justify-content: space-evenly;
+
+                                    .hrNews {
+                                        width: auto;
+                                    }
+                                }
+
+
+                                .footer-left {
+
+                                    .inner-footer-left {
+                                        position: unset;
+
+                                        .tablet-flex {
+                                            display: flex;
+
+
+                                        }
+
+
+                                    }
                                 }
                             }
                         }
@@ -1493,19 +1986,153 @@ body {
                     }
 
 
-                    .footer-section {
-                        .footer-container {
-                            .footerImg {
-                                display: none;
+                    .footer-container {
+
+
+                        .footer-div {
+
+                            .footer-top {
+
+                                height: 80px;
+                                padding: 10px 10px;
+                                display: flex;
+                                column-gap: 5px;
+
+                                .hp-veteran-badge {
+                                    display: block;
+                                }
+
+                                .footer-title {
+                                    font: 800 12px/13px 'Source Sans 3', sans-serif;
+                                    text-align: left;
+                                }
                             }
 
-                            .mob-footer {
-                                display: block;
-                                width: 100%;
-                                height: 100%;
+                            .footer-contents {
+
+                                height: auto;
+                                flex-direction: column-reverse;
+
+
+
+                                .footer-right {
+                                    padding: 30px 38px 30px 38px;
+
+                                    display: block;
+
+                                    .first-row-footer {
+
+                                        position: relative;
+
+                                        .company {
+                                            border-bottom: 1px solid #575754;
+
+                                        }
+
+
+                                        .first-title {
+                                            border-top: 1px solid #575754;
+                                            padding: 10px 0px;
+                                        }
+
+                                        .add {
+                                            display: block;
+                                            // float: right;
+                                            color: #d0dd94;
+                                            position: absolute;
+                                            right: 0px;
+                                            top: 10px;
+                                        }
+
+                                        .footer-lists {
+                                            display: none;
+                                        }
+
+                                    }
+
+                                    .hrFooter {
+                                        display: none;
+                                    }
+
+                                }
+
+                                .footer-middle {
+                                    display: block;
+
+                                    .newsLetter-section {
+                                        .message-details {
+                                            .email-input {
+                                                .email {
+                                                    width: 100%;
+
+                                                }
+                                            }
+                                        }
+
+                                    }
+
+
+                                    .hrNews {
+                                        width: auto;
+                                        margin-left: 38px;
+
+                                    }
+                                }
+
+
+                                .footer-left {
+
+
+                                    .inner-footer-left {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding: 20px 20px 20px 20px;
+
+                                        .tablet-flex {
+                                            display: block;
+
+                                            .features {
+                                                padding-left: 97px;
+
+                                                .marketing-div {
+                                                    .listFeatures {
+                                                        font-size: 17px;
+                                                    }
+                                                }
+
+
+                                            }
+                                        }
+                                    }
+                                }
+
+
                             }
                         }
+
+                        .footer-bottom {
+                            .bottom-div {
+                                display: block;
+
+                                .copyright-div {
+
+                                    justify-content: center;
+                                }
+
+                                .copyright {
+                                    text-align: center;
+
+                                }
+                            }
+
+
+
+                        }
                     }
+
+
+
                 }
 
             }

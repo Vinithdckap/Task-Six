@@ -642,11 +642,205 @@ body .main-section .main-container .inner-container .contact-banner .contact-det
   padding: 10px 15px;
   border-radius: 20px;
 }
-body .main-section .main-container .inner-container .footer-section .footer-container .footerImg {
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-top {
+  background-color: #310703;
+  height: 31px;
   width: 100%;
 }
-body .main-section .main-container .inner-container .footer-section .footer-container .mob-footer {
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-top .hp-veteran-badge {
   display: none;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-top .footer-title {
+  font: 800 14px/13px 'Source Sans 3', sans-serif;
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-top: 9px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1366px;
+  background-color: #2F2F2B;
+  display: flex;
+  height: 325px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right {
+  display: flex;
+  column-gap: 48px;
+  padding: 25px 0px 0px 94px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .first-title {
+  font: bold 16px/24px 'Sarala', sans-serif;
+  color: #EFF0E8;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .add {
+  display: none;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .footer-lists .ulContents {
+  padding-top: 10px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .footer-lists .ulContents .listContent,
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .footer-lists .ulContents a {
+  font: 400 16px/34px 'Sarala', sans-serif;
+  color: #D0DD94;
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .hrFooter {
+  height: 254px;
+  border: 1px solid #474747;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle {
+  padding-top: 31px;
+  padding-right: 50px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .newsLetter-section .message-details {
+  padding-left: 38px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .newsLetter-section .message-details .news-div {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .newsLetter-section .message-details .news-div .new-div-title {
+  font: bold 33px/16px 'Sarala', sans-serif;
+  color: #FEFEFE;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .newsLetter-section .message-details .signUpText {
+  font: 400 16px/20px 'Sarala', sans-serif;
+  color: #D2C9B4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .newsLetter-section .message-details .email-input .emailSearch {
+  position: relative;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .newsLetter-section .message-details .email-input .emailSearch .email {
+  width: 268px;
+  height: 44px;
+  background-color: #DDDED6;
+  border: none;
+  padding: 11px;
+  font-family: 'Sarala', sans-serif;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .newsLetter-section .message-details .email-input .emailSearch .email::placeholder {
+  font: 400 14px/16px 'Sarala', sans-serif;
+  color: #4A4A4A;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .newsLetter-section .message-details .email-input .emailSearch .rightArrow {
+  height: 44px;
+  width: 44px;
+  background: #727D49;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  font-size: 40px;
+  color: #FFFFFF;
+  text-align: center;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .newsLetter-section .message-details .email-input .emailSearch .rightArrow .arrow {
+  font-size: 40px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .hrNews {
+  margin-top: 24px;
+  margin-bottom: 15px;
+  border: 1px solid #474747;
+  width: 100%;
+  margin-left: 23px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .brand-section {
+  padding-left: 38px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .brand-section .brand-div {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .brand-section .brand-div .cardHolder {
+  font: bold 17px/20px 'Sarala', sans-serif;
+  color: #EFF0E8;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .brand-section .dealerInfo {
+  padding-top: 15px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .brand-section .dealerInfo a {
+  font: bold 14px/20px 'Sarala', sans-serif;
+  color: #8F95A6;
+  letter-spacing: 0.5px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left {
+  background-image: url(Images/footer-left\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left {
+  padding: 20px 63px 20px 25px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .social-media-container {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .social-media-container .connectFb {
+  font: bold 24px/48px 'Titillium Web', sans-serif;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .social-media-container .specialText {
+  font: bold 50px/30px 'Titillium Web', sans-serif;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .features {
+  padding-left: 99px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .features .marketing-div .listFeatures {
+  font: 400 18px/24px 'Sarala', sans-serif;
+  color: #A2A8BA;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .footerBtns {
+  padding-top: 20px;
+  position: relative;
+  right: 19px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .footerBtns .followBtns {
+  width: 179px;
+  height: 44px;
+  background: transparent;
+  font: bold 18px/24px 'Sarala', sans-serif;
+  color: #FFFFFF;
+  border: 2px solid #ffffff;
+}
+body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .footerBtns .followBtns:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+body .main-section .main-container .inner-container .footer-container .footer-bottom {
+  height: 47px;
+  max-width: 1365px;
+  margin: 0 auto;
+}
+body .main-section .main-container .inner-container .footer-container .footer-bottom .bottom-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 9px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-bottom .bottom-div .copyright-div {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+body .main-section .main-container .inner-container .footer-container .footer-bottom .bottom-div .copyright-div .secure {
+  font: bold 13px/16px 'Sarala', sans-serif;
+  color: #6d6e64;
+}
+body .main-section .main-container .inner-container .footer-container .footer-bottom .bottom-div .copyright {
+  font: 400 12px/29px 'Sarala', sans-serif;
+  color: #6D6E64;
+}
+body .main-section .main-container .inner-container .footer-container .footer-bottom .bottom-div .copyright a {
+  color: #6D6E64;
 }
 @media screen and (min-width: 1024px) and (max-width: 1365px) {
   body .main-section .main-container .inner-container .site-description-section h4 {
@@ -679,6 +873,71 @@ body .main-section .main-container .inner-container .footer-section .footer-cont
   }
   body .main-section .main-container .inner-container .filter-listing-section .listingPage-section .listing-container .product-listing .product-section .productInfo-container .product-flex .productDetails .pricingDetails .quantity {
     width: 15%;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-top .hp-veteran-badge {
+    display: none;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents {
+    height: 426px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right {
+    padding: 25px 0px 0px 20px;
+    column-gap: 25px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .first-title {
+    font: bold 14px/24px 'Sarala', sans-serif;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .footer-lists .ulContents {
+    width: 99px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .footer-lists .ulContents .listContent {
+    font: 400 14px/22px 'Sarala', sans-serif;
+    padding-top: 15px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle {
+    padding-right: 20px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .newsLetter-section .message-details {
+    padding-left: 20px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .newsLetter-section .message-details .message-details .email-input .emailSearch .email {
+    width: 226px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .hrNews {
+    width: auto;
+    margin-left: 20px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .brand-section {
+    padding-left: 20px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left {
+    background-image: url(Images/laptop\ footer\ left.png);
+    width: 100%;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left {
+    padding: 20px 18px 20px 18px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .social-media-container {
+    column-gap: 5px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .social-media-container .connectFb {
+    font: bold 20px/48px 'Titillium Web', sans-serif;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .social-media-container .specialText {
+    font: bold 46px/30px 'Titillium Web', sans-serif;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .features {
+    padding-left: 88px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .features .marketing-div .listFeatures {
+    font-size: 16px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-bottom .bottom-div {
+    justify-content: space-between;
+    padding-left: 20px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-bottom .bottom-div .copyright {
+    padding-right: 20px;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -729,6 +988,36 @@ body .main-section .main-container .inner-container .footer-section .footer-cont
   }
   body .main-section .main-container .inner-container .contact-banner .contact-details .helpText p {
     max-width: 385px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-top .hp-veteran-badge {
+    display: none;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-top .footer-title {
+    font: 800 12px/13px 'Source Sans 3', sans-serif;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right {
+    padding: 50px 0px 20px 0px;
+    justify-content: space-evenly;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .hrFooter {
+    display: none;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .hrNews {
+    width: auto;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left {
+    position: unset;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .tablet-flex {
+    display: flex;
   }
 }
 @media screen and (max-width: 767px) {
@@ -872,12 +1161,82 @@ body .main-section .main-container .inner-container .footer-section .footer-cont
     width: 180px;
     padding: 8px 13px;
   }
-  body .main-section .main-container .inner-container .footer-section .footer-container .footerImg {
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-top {
+    height: 80px;
+    padding: 10px 10px;
+    display: flex;
+    column-gap: 5px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-top .hp-veteran-badge {
+    display: block;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-top .footer-title {
+    font: 800 12px/13px 'Source Sans 3', sans-serif;
+    text-align: left;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right {
+    padding: 30px 38px 30px 38px;
+    display: block;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer {
+    position: relative;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .company {
+    border-bottom: 1px solid #575754;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .first-title {
+    border-top: 1px solid #575754;
+    padding: 10px 0px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .add {
+    display: block;
+    color: #d0dd94;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .first-row-footer .footer-lists {
     display: none;
   }
-  body .main-section .main-container .inner-container .footer-section .footer-container .mob-footer {
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-right .hrFooter {
+    display: none;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle {
     display: block;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .newsLetter-section .message-details .email-input .email {
     width: 100%;
-    height: 100%;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-middle .hrNews {
+    width: auto;
+    margin-left: 38px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .tablet-flex {
+    display: block;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .tablet-flex .features {
+    padding-left: 97px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-div .footer-contents .footer-left .inner-footer-left .tablet-flex .features .marketing-div .listFeatures {
+    font-size: 17px;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-bottom .bottom-div {
+    display: block;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-bottom .bottom-div .copyright-div {
+    justify-content: center;
+  }
+  body .main-section .main-container .inner-container .footer-container .footer-bottom .bottom-div .copyright {
+    text-align: center;
   }
 }
